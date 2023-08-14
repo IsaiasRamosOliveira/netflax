@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header {
+    background-color: antiquewhite;
+    grid-area: header;
+}
+#aside  {
+    background-color: aqua;
+    grid-area: aside;
+}
+#members {
+    background-color: brown;
+    grid-area: members;
+}
+#container {
+    width: 80 px calc(100svw - 80px);
+    height: 100svh;
+    display: grid;
+    grid-template-columns: 19% 74.3% 6.7%;
+    grid-template-rows: 14% 1fr;
+    grid-template-areas: 
+    "aside header members"
+    "aside content members";
+    background-color: violet;
+}
+#content {
+    grid-area: content;
+    background-color: chartreuse;
+}
+#banner {
+    background-color: cadetblue;
+    grid-area: banner;
+    height: 46%;
+}
+#parties {
+    background-color: blue;
+    grid-area: parties;
+    height: 27%;
+}
+#wathing {
+    background-color: blueviolet;
+    grid-area: wathing;
+    height: 27%;
+}
