@@ -1,0 +1,118 @@
+:root{
+    --backgroundColor: #212329;
+    --inputColor: #505362;
+    --borderColor: #3a4047;
+    --inputFontColor: #e8e8e9;
+    --levelFontColor: #5a5c6d;
+    --userFontColor: #e0e0e9;
+}
+
+#header {
+    background-color: var(--backgroundColor);
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid var(--borderColor);
+    padding: 0px 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header,
+.header_nav,
+.header_menu{
+    display: flex;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header_buttons,
+.header_input,
+.header_icons,
+.header_user{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.header_buttons img,
+.header_input,
+.header_icons{
+    width: 12px;
+}
+
+.header_buttons {
+    width: 35px;
+    justify-content: space-between
+}
+
+.header_nav {
+    width: 70%;
+}
+.header_menu {
+    width: 30%;
+    justify-content: right;
+    gap: 20px;
+}
+
+.header_input {
+    width: 60vw;
+    height: 100%;
+}
+
+.header_input_searchbar{
+    background-color: var(--backgroundColor);
+    border-radius: 16px;
+    height: 45%;
+    width: 50%;
+    border: 1px solid var(--inputColor);
+    padding: 0px 30px;
+    color: var(--inputFontColor);
+}
+
+.header_input_image_left,
+.header_input_image_right{
+    height: 15px;
+    width: 15px;
+    position: relative;
+}
+
+.header_input_image_left {
+    left: 25px;
+}
+
+.header_input_image_right {
+    right: 25px;
+    width: 17px;
+}
+
+.header_icons{
+    width: 60px;
+    justify-content: space-between;
+}
+
+.header_icons_anchor img {
+    width: 20px;
+}
+
+.header_user{
+    width: 120px;
+    color: white;
+    justify-content: space-between;
+}
+
+.header_user_picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.header_user_info_name {
+    font-size: 14px;
+    color: var(--userFontColor);
+}
+
+.header_user_info_level {
+    font-size: 12px;
+    color: var(--levelFontColor);
+}
