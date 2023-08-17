@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 #header {
     background-color: antiquewhite;
@@ -31,7 +32,8 @@
 }
 #content {
     grid-area: content;
-    overflow: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
     background-color: chartreuse;
 }
 #banner {
@@ -44,11 +46,11 @@
     background-color: blue;
     overflow: hidden;
     grid-area: parties;
-    height: 27%;
+    min-height: 27%;
 }
 #wathing {
     background-color: blueviolet;
     overflow: hidden;
     grid-area: wathing;
-    height: 27%;
+    min-height: 27%;
 }
