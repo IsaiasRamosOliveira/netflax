@@ -5,16 +5,14 @@
     --inputFontColor: #e8e8e9;
     --levelFontColor: #5a5c6d;
     --userFontColor: #e0e0e9;
+    --userBorderEmptyColor: #4a4c59;
+    --userBorderFullColor: #d51f26;
 }
 
 #header {
     background-color: var(--backgroundColor);
     width: 100%;
-    height: 100%;
     border-top: 2px solid var(--borderColor);
-    padding: 0px 30px;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .header,
@@ -22,8 +20,8 @@
 .header_menu{
     display: flex;
     height: 100%;
-    display: flex;
     align-items: center;
+    position: relative;
 }
 
 .header_buttons,
@@ -41,30 +39,26 @@
     width: 12px;
 }
 
-.header_buttons {
-    width: 35px;
-    justify-content: space-between
+.header_nav {
+    width: 47%;
+    padding-left: 2%;
 }
 
-.header_nav {
-    width: 70%;
-}
-.header_menu {
-    width: 30%;
-    justify-content: right;
-    gap: 20px;
+.header_buttons {
+    width: 5%;
+    justify-content: space-between;
 }
 
 .header_input {
-    width: 60vw;
+    width: 95%;
     height: 100%;
 }
 
 .header_input_searchbar{
     background-color: var(--backgroundColor);
     border-radius: 16px;
-    height: 45%;
-    width: 50%;
+    height: 35%;
+    width: 100%;
     border: 1px solid var(--inputColor);
     padding: 0px 30px;
     color: var(--inputFontColor);
@@ -86,33 +80,44 @@
     width: 17px;
 }
 
+.header_menu {
+    width: 53%;
+    justify-content: right;
+    padding-right: 3%;
+} 
+
 .header_icons{
-    width: 60px;
-    justify-content: space-between;
+    width: 110px;
+    gap: 35px;
 }
 
 .header_icons_anchor img {
-    width: 20px;
+    width: 22px;
+    height: 22px;
 }
 
 .header_user{
-    width: 120px;
+    width: 140px;
     color: white;
     justify-content: space-between;
 }
 
 .header_user_picture {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
+    padding: 4px;
+    border-style: solid;
+    border-color: var(--userBorderFullColor) var(--userBorderEmptyColor) var(--backgroundColor) var(--userBorderFullColor);
+    border-width: 3px 3px 3px 3px;
 }
 
 .header_user_info_name {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--userFontColor);
 }
 
 .header_user_info_level {
-    font-size: 12px;
+    font-size: 14px;
     color: var(--levelFontColor);
 }
