@@ -1,0 +1,67 @@
+#wathing{
+background-color: #1D1E23;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content:space-around;
+align-items:flex-start;
+padding-top: 40px;
+position: relative;
+}
+.primeiro__filme,.segundo__filme,.terceiro__filme,.quarto__filme{  
+background-color: #2C2D35;
+width: 200px;
+height: 200px;
+border-radius: 30px;
+overflow: hidden;
+position: relative;
+}
+.img__primeiro__filme,.img__segundo__filme,.img__terceiro__filme,.img__quarto__filme{ 
+width: 100%;
+height: auto;
+}
+.img__primeiro__filme{
+margin-top: -14%;
+}
+.img__segundo__filme{
+margin-top: -7%;
+}
+.img__terceiro__filme{
+margin-top: -6%;
+}
+.img__quarto__filme{
+margin-top: -18%;
+}
+.txt__titulo{
+position: absolute;
+top: 10px;
+left: 35px;
+}
+.txt__filme{
+font-size: small;
+text-align: center;
+}
+.carregamento__filme{
+position: absolute;
+top: 85px;
+left: 0;
+z-index: 1; 
+}    
+.icone__filme{
+left: 10px;
+top: 10px;
+width: 40px;
+height: 20px;
+border-radius: 30px;
+position: absolute;
+backdrop-filter: blur(4px);             
+}
+.txt__icone{
+font-size: 10px;
+text-align: center;
+padding: 3px;
+}
+.txt__icone,.txt__filme,.txt__titulo{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color:#FFFFFF;
+}
