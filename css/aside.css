@@ -1,0 +1,82 @@
+#aside {
+    background: rgba(28, 29, 34, 255);
+    overflow-y: auto;
+}
+.sidebar {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 240px;
+    height: 100%;
+    border-right: 2px solid #2f3336;
+}
+
+.sidebar_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    width: 100%;
+    color: #fff;
+}
+
+.logo_netflix {
+    font-size: 24px;
+    color: #fff;
+}
+
+.logo_netflix::after {
+    content: ".";
+    color: red;
+    border-radius: 100px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+    width: 100%;
+    background: orange;
+    height: 100%;
+    padding: 0px 28px;
+}
+.sidebar:has(h2) {
+    font-size: 12px;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar ul li {
+    display: flex;
+    gap: 40px;
+    background-color: red;
+    margin: 0px -28px;
+    padding: 6px 28px;
+    font-size: 14px;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.sidebar * {
+    text-decoration: none;
+    color: rgba(149, 150, 157, 255);
+}
+
+.sidebar ul li:hover {
+    border-left: 2px solid red;
+}
+
+.icon_text:hover {
+    color: #fff;
+}
