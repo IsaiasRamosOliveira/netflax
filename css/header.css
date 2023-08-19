@@ -1,0 +1,123 @@
+:root{
+    --backgroundColor: #212329;
+    --inputColor: #505362;
+    --borderColor: #3a4047;
+    --inputFontColor: #e8e8e9;
+    --levelFontColor: #5a5c6d;
+    --userFontColor: #e0e0e9;
+    --userBorderEmptyColor: #4a4c59;
+    --userBorderFullColor: #d51f26;
+}
+
+#header {
+    background-color: var(--backgroundColor);
+    width: 100%;
+    border-top: 2px solid var(--borderColor);
+}
+
+.header,
+.header_nav,
+.header_menu{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.header_buttons,
+.header_input,
+.header_icons,
+.header_user{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.header_buttons img,
+.header_input,
+.header_icons{
+    width: 12px;
+}
+
+.header_nav {
+    width: 47%;
+    padding-left: 2%;
+}
+
+.header_buttons {
+    width: 5%;
+    justify-content: space-between;
+}
+
+.header_input {
+    width: 95%;
+    height: 100%;
+}
+
+.header_input_searchbar{
+    background-color: var(--backgroundColor);
+    border-radius: 16px;
+    height: 35%;
+    width: 100%;
+    border: 1px solid var(--inputColor);
+    padding: 0px 30px;
+    color: var(--inputFontColor);
+}
+
+.header_input_image_left,
+.header_input_image_right{
+    height: 15px;
+    width: 15px;
+    position: relative;
+}
+
+.header_input_image_left {
+    left: 25px;
+}
+
+.header_input_image_right {
+    right: 25px;
+    width: 17px;
+}
+
+.header_menu {
+    width: 53%;
+    justify-content: right;
+    padding-right: 3%;
+} 
+
+.header_icons{
+    width: 110px;
+    gap: 35px;
+}
+
+.header_icons_anchor img {
+    width: 22px;
+    height: 22px;
+}
+
+.header_user{
+    width: 140px;
+    color: white;
+    justify-content: space-between;
+}
+
+.header_user_picture {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 4px;
+    border-style: solid;
+    border-color: var(--userBorderFullColor) var(--userBorderEmptyColor) var(--backgroundColor) var(--userBorderFullColor);
+    border-width: 3px 3px 3px 3px;
+}
+
+.header_user_info_name {
+    font-size: 16px;
+    color: var(--userFontColor);
+}
+
+.header_user_info_level {
+    font-size: 14px;
+    color: var(--levelFontColor);
+}
