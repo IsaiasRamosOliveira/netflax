@@ -1,0 +1,45 @@
+.section_bottom {
+    position: relative;
+    top: 15%;
+    left: 19%;
+    background-color: rgba(20,21,25,255);
+    width: 60%;
+    height: 17%;
+    border-radius: 10%;
+    color: #fff;
+    font-family: inherit;
+    text-align: center;
+    font-size: 12px;
+}
+
+.section_bottom_view {
+    position: relative;
+    top: 15%;
+    left: 22%;
+    background-color: rgba(44,45,53,255);
+    width: 120px;
+    height: 40px;
+    border-radius: 10%;
+    color: #fff;
+    font-family: inherit;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 12px;
+}
+
+.img_box {
+    position: relative;
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+}
+
+.sidebar div h4 {
+    font-size: 14px;
+    padding: 5px;
+}
+.bottom_text {
+    color:rgba(149,150,157,255);
+    font-size: 12px;
+}

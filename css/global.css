@@ -9,11 +9,13 @@
     overflow: hidden;
     grid-area: header;
 }
+
 #aside  {
     background-color: aqua;
     overflow: hidden;
     grid-area: aside;
 }
+
 #members {
     background-color: brown;
     overflow: hidden;
