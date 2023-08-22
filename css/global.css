@@ -2,34 +2,38 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
+#container {
+    width: 80px calc(100svw - 80px);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 19% 74.3% 6.7%;
+    grid-template-rows: 14% 1fr;
+    grid-template-areas:
+        "aside header members"
+        "aside content members";
+    background-color: violet;
+}
+
 #header {
     background-color: antiquewhite;
     overflow: hidden;
     grid-area: header;
 }
-#aside  {
+
+#aside {
     background-color: aqua;
     overflow: hidden;
     grid-area: aside;
 }
+
 #members {
     background-color: brown;
     overflow: hidden;
     grid-area: members;
 }
-#container {
-    width: 80 px calc(100svw - 80px);
-    height: 100svh;
-    display: grid;
-    grid-template-columns: 19% 74.3% 6.7%;
-    grid-template-rows: 14% 1fr;
-    grid-template-areas: 
-    "aside header members"
-    "aside content members";
-    background-color: violet;
-}
+
 #content {
     grid-area: content;
     overflow: scroll;
