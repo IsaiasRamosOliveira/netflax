@@ -12,7 +12,7 @@
     justify-content: center;
 }
 
-.banner, .banner_header_xp, .banner_footer_watch, .banner_footer_add_button, .banner_footer_movies_img:nth-child(2) {
+.banner, .banner_header_xp, .banner_footer_watch, .banner_footer_add_button, .banner_footer_movies_img {
     border-radius: 18px;
 }
 
@@ -60,6 +60,7 @@
     justify-content:space-between;
     width: 90%;
     margin: 2% 0 0 3%;
+    height: 70px;
 }
 
 .banner_footer_watch {
@@ -86,10 +87,10 @@
     cursor: pointer;
 }
 
-.banner_footer_movies_img:nth-child(2) {
+.banner_footer_movies_img:hover {
     width: 100px;
     height: 70px;
-    border: 4px solid rgb(219, 180, 128, 70%);
+    border: 4px solid rgba(223, 220, 217, 40%);
 }
 
 .banner, .banner_footer_add, .banner_footer_watch_link {
