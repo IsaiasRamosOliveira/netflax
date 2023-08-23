@@ -3,7 +3,9 @@
     font-size: 12px;
     background-image:url("/assets/imgs/banner/blade_runner.jpg");
     background-size: cover;
-    width: 100%;
+    width: 96.5%;
+    margin-left: 2%;
+    border-radius: 32px;
 }
 
 .banner_header_xp, .banner_header_text, .banner_footer_options, .banner_footer_watch, .banner_footer_add, .banner_footer_movies  {
@@ -12,7 +14,7 @@
     justify-content: center;
 }
 
-.banner, .banner_header_xp, .banner_footer_watch, .banner_footer_add_button, .banner_footer_movies_img {
+.banner_header_xp, .banner_footer_watch, .banner_footer_add_button, .banner_footer_movies_img {
     border-radius: 18px;
 }
 
