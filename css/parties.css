@@ -15,8 +15,12 @@
   padding: 0 2%;
 }
 
+.parties_titleAndScroll,
+.parties_scrollBar{
+  display: flex;
+}
+
 .parties_titleAndScroll {
- display: flex;
  align-items: center;
  padding: 20px 20px 10px 20px;
  gap: 20px;
@@ -27,7 +31,6 @@
 }
 
 .parties_scrollbar {
-  display: flex;
   align-items: center;
   width: 15%;
   height: 3px;
@@ -43,8 +46,9 @@
 }
 
 .parties_cards,
-.parties_card-top,
-.parties_card-bottom {
+.parties_card_top,
+.parties_card_bottom,
+.parties_card_watchTogether {
   display: flex;
 }
 
@@ -71,57 +75,56 @@
   background-color: var(--cardHoverColor);
 }
 
-.parties_card-top {
+.parties_card_top {
   justify-content: space-between;
   height: 74px;
   padding-top: 13px;
 }
 
-.movieCover {
+.parties_card_movieCover {
   width: 40px;
   height: 40px;
   border-radius: 12px;
 }
 
-.parties_card_watchtogether {
-  display: flex;
+.parties_card_watchTogether {
   position: relative;
   width: 25px;
 }
 
-.User {
+.parties_card_watcher {
   position: absolute;
   width: 25px;
   height: 25px;
   border-radius: 50%;
 }
 
-.User1 {
+.parties_card_watcher-1 {
   z-index: 1;
   right: 30px;
 }
 
-.User2 {
+.parties_card_watcher-2 {
   z-index: 2;
   right: 15px;
 }
 
-.User3 {
+.parties_card_watcher-3 {
   z-index: 3;
   right: 0px;
 }
 
-.parties_card-bottom {
+.parties_card_bottom {
   flex-direction: column;
   height: 56px;
 }
 
-.parties_card-title {
+.parties_card_title {
   font-size: 14px;
   color: var(--titleColor);
 }
 
-.parties_card-description {
+.parties_card_description {
   max-width: 180px;
   max-height: 35px;
   font-size: 12px;
