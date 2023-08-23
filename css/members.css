@@ -1,0 +1,35 @@
+#members{
+    background-color: #1A1A1E;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center ;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    height: 100%; 
+    width: 100%;
+    position: relative;
+}
+.members__btn--adicionar,
+.members__perfil--primeiro,
+.members__perfil--segundo,
+.members__perfil--terceiro,
+.members__perfil--quarto,
+.members__perfil--quinto,
+.members__perfil--sexto,
+.members__perfil--setimo{
+    background-color: #D81F26;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    overflow: hidden; 
+    cursor: pointer; 
+}
+.members__perfil--notificaçoes{
+    display: flex;
+    position: absolute;
+    margin-left: 25px;      
+}
+
+
