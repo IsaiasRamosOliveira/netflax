@@ -1,33 +1,37 @@
-
 .banner {
-    color: #fff;
+    font-family: sans-serif;
     font-size: 12px;
-    background-image:url("/assets/imgs/banner/blade_runner.png");
-    background-size:cover;
-    border-radius: 18px;
+    background-image:url("/assets/imgs/banner/blade_runner.jpg");
+    background-size: cover;
     width: 100%;
 }
 
-.banner_header_xp, .banner_header_text, .banner_footer_options, .banner_footer_options_watch, .banner_footer_options_add, .banner_footer_movies  {
+.banner_header_xp, .banner_header_text, .banner_footer_options, .banner_footer_watch, .banner_footer_add, .banner_footer_movies  {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.banner_header {
+.banner, .banner_header_xp, .banner_footer_watch, .banner_footer_add_button, .banner_footer_movies_img:nth-child(2) {
+    border-radius: 18px;
+}
+
+.banner_header, .banner_footer {
     display: flex;
-    background: red;
+}
+
+.banner_header {
     margin: 2% 0 0 3%;
+    height: 32px;
 }
 
 .banner_header_xp {
     background: #00000060;
-    border-radius: 18px;
     width: 4%;
 }
 
 .banner_header_profile {
-    margin: 0 10px 0 30px;
+    margin: 0 1% 0 2%;
 }
 
 .banner_header_profile_img {
@@ -35,6 +39,7 @@
     height: 30px;
     border-radius: 100%;
     margin-left: -10px;
+    cursor: pointer;
 }
 
 .banner_header_profile_img:hover {
@@ -42,14 +47,7 @@
     height: 32px;
 }
 
-.banner_header_text {
-    background-color: blueviolet;
-}
-
 .banner_title {
-    display: flex;
-    flex-direction: column;
-    background-color:brown;
     margin: 7% 0 0 3%;
 }
 
@@ -59,43 +57,45 @@
 }
 
 .banner_footer {
-    display: flex;
     justify-content:space-between;
     width: 90%;
     margin: 2% 0 0 3%;
-    background-color: aqua;
 }
 
-.banner_footer_options_watch {
-    width: 70px;
-    height: 40px;
-    border-radius: 12px;
-    background-color:burlywood;
+.banner_footer_watch {
+    width: 80px;
+    height: 50px;
+    background-color:rgba(216,31,38,255);
     margin-right: 15px;
 }
 
-.banner_footer_options_add {
-    width: 40px;
-    height: 40px;
-    border-radius: 12px;
-    background-color: blue;
+.banner_footer_add_button {
+    width: 50px;
+    height: 50px;
+    background-color: #c9c1c170;
     font-size: 26px;
+    border: none;
+    cursor: pointer;
 }
 
 .banner_footer_movies_img {
     width: 80px;
     height: 50px;
-    border-radius: 6px;
+    border-radius: 8px;
     margin-left: 12px;
+    cursor: pointer;
 }
 
 .banner_footer_movies_img:nth-child(2) {
     width: 100px;
     height: 70px;
-    border-radius: 12px;
-    border: 4px solid rgb(219, 180, 128, 90%);
+    border: 4px solid rgb(219, 180, 128, 70%);
 }
 
-.banner_footer_movies {
-    display: flex;
+.banner, .banner_footer_add, .banner_footer_watch_link {
+    color: #fff;
+}
+
+.banner_footer_watch_link {
+    text-decoration: none;
 }
