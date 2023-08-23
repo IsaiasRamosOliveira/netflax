@@ -1,46 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/wathing.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/wathing.css" />
     <title>Netflix.</title>
-</head>
-<body id="container">
-    <header id="header">  header  </header>
-    <aside id="aside">  aside  </aside>
-    <aside id="members">  </aside>
+  </head>
+  <body id="container">
+    <header id="header">header</header>
+    <aside id="aside">aside</aside>
+    <aside id="members"></aside>
     <main id="content">
-        <section id="banner"> banner </section>
-        <section id="parties"> parties </section>
-        <section id="wathing">
-            <h4 class="txt__titulo">Continue Watching</h4>
-            <div class="primeiro__filme">
-              <img class="img__primeiro__filme" src="img-wathing/suzame grande 2.webp" alt="Filme Suzame">
-              <div class="icone__filme"><p class="txt__icone" >10PX</p></div>
-              <img class="carregamento__filme" src="img-wathing/barra-de-carregamento-pequena.png" alt="barra de carregamento de filme" width="210px" height="5px">
-              <p class="txt__filme"><span>Suzame</span></p>
-            </div>
-            <div class="segundo__filme">
-                <div class="icone__filme"><p class="txt__icone" >10PX</p></div>
-                <img class="img__segundo__filme" src="img-wathing/kimetsu-grande.jpg" alt="Série Kimetsu no Yaiba">
-                <img class="carregamento__filme" src="img-wathing/barra-de-carregamento-pequena.png" alt="barra de carregamento de filme" width="210px" height="5px" >
-                <p class="txt__filme" ><span>Demon Slayer</span></p>
-            </div>
-            <div  class="terceiro__filme">
-                <img class="img__terceiro__filme" src="img-wathing/casamento-grande.webp" alt="Série Meu casamento feliz">
-                <img class="carregamento__filme" src="img-wathing/barra-de-carregamento-pequena.png" alt="barra de carregamento de filme" width="210px" height="5px" >
-                <p class="txt__filme" ><span>Watashi no Shiawase</span></p>
-                <div class="icone__filme"><p class="txt__icone" >10PX</p></div>
-            </div>
-            <div class="quarto__filme">
-                <img class="img__quarto__filme" src="img-wathing/your-name-grande.png" alt="Filme Your Name">
-                <img class="carregamento__filme" src="img-wathing/barra-de-carregamento-pequena.png" alt="barra de carregamento de filme" width="210px" height="5px" >
-                <p class="txt__filme" ><span>Your Name</span></p>
-                <div class="icone__filme"><p class="txt__icone" >10PX</p></div>
-            </div>
-        </section>
+      <section id="banner">banner</section>
+      <section id="parties">parties</section>
+      <section id="wathing">
+        <h4 class="wathing_title">Continue Watching</h4>
+        <div class="movies_organizer_cards">
+          <div class="movie">
+            <p class="movie_relative_xp">10XP</p>
+            <img
+              src="img-wathing/Meu-Casamento-Feliz-ofc.webp"
+              alt=""
+              class="movie_img"
+              width="200"
+              height="200"
+            />
+            <progress value="70" max="100" class="movie_progressbar"></progress>
+            <h4 class="movie_name">Meu Casamento Feliz</h4>
+          </div>
+          <div class="movie">
+            <p class="movie_relative_xp">10XP</p>
+            <img
+              src="img-wathing/kimetsu-filme.webp"
+              alt=""
+              class="movie_img"
+              width="200"
+              height="200"
+            />
+            <progress value="60" max="100" class="movie_progressbar"></progress>
+            <h4 class="movie_name">Kimetsu no Yaiba</h4>
+          </div>
+          <div class="movie">
+            <p class="movie_relative_xp">40XP</p>
+            <img
+              src="img-wathing/suzame grande 2.webp"
+              alt=""
+              class="movie_img"
+              width="200"
+              height="200"
+            />
+            <progress value="30" max="100" class="movie_progressbar"></progress>
+            <h4 class="movie_name">Suzume</h4>
+          </div>
+          <div class="movie">
+            <p class="movie_relative_xp">10XP</p>
+            <img
+              src="img-wathing/your-name-filme-ofc.jpg"
+              alt=""
+              class="movie_img"
+              width="200"
+              height="200"
+            />
+            <progress value="80" max="100" class="movie_progressbar"></progress>
+            <h4 class="movie_name">Your</h4>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
