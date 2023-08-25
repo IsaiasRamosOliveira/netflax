@@ -1,54 +1,68 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-#header {
-    background-color: antiquewhite;
-    overflow: hidden;
-    grid-area: header;
+*::-webkit-scrollbar {
+  width: 4px;
 }
-#aside  {
-    background-color: aqua;
-    overflow: hidden;
-    grid-area: aside;
-}
-#members {
-    background-color: brown;
-    overflow: hidden;
-    grid-area: members;
+*::-webkit-scrollbar-thumb {
+  background-color: #272830;
+  border-radius: 20px;
 }
 #container {
-    width: 80 px calc(100svw - 80px);
-    height: 100svh;
-    display: grid;
-    grid-template-columns: 19% 74.3% 6.7%;
-    grid-template-rows: 14% 1fr;
-    grid-template-areas: 
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 73% 7%;
+  grid-template-rows: 14% 1fr;
+  grid-template-areas:
     "aside header members"
     "aside content members";
-    background-color: violet;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #222329, #17181C);
 }
-#content {
-    grid-area: content;
-    overflow: hidden;
-    background-color: chartreuse;
+
+#header {
+  overflow: hidden;
+  grid-area: header;
+  width: 100%;
 }
+
+#aside {
+  grid-area: aside;
+  overflow-y: auto;
+  border-right: 1.5px solid #272830;
+}
+
+#members {
+  overflow: hidden;
+  grid-area: members;
+}
+
 #banner {
-    background-color: cadetblue;
-    overflow: hidden;
-    grid-area: banner;
-    height: 46%;
+  grid-area: banner;
+  height: 46%;
 }
 #parties {
-    background-color: blue;
-    overflow: hidden;
-    grid-area: parties;
-    height: 27%;
+  grid-area: parties;
+  min-height: 27%;
 }
 #wathing {
-    background-color: blueviolet;
-    overflow: hidden;
-    grid-area: wathing;
-    height: 27%;
+  grid-area: wathing;
+  min-height: 27%;
+}
+
+#content {
+  grid-area: content;
+  overflow-y: auto;
+}
+
+@media (max-width: 1024px) {
+  #container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 14% 86%;
+    grid-template-areas: "header" "content";
+  }
 }
