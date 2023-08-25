@@ -26,11 +26,13 @@
 #header {
   overflow: hidden;
   grid-area: header;
+  width: 100%;
 }
 
 #aside {
-  overflow: hidden;
   grid-area: aside;
+  overflow-y: auto;
+  border-right: 1.5px solid #2c2d35;
 }
 
 #members {
