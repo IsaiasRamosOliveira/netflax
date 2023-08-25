@@ -20,22 +20,20 @@
     "aside header members"
     "aside content members";
   overflow: hidden;
+  background-color: #212329;
 }
 
 #header {
-  background-color: antiquewhite;
   overflow: hidden;
   grid-area: header;
 }
 
 #aside {
-  background-color: aqua;
   overflow: hidden;
   grid-area: aside;
 }
 
 #members {
-  background-color: brown;
   overflow: hidden;
   grid-area: members;
 }
@@ -45,17 +43,14 @@
   overflow-y: auto;
 }
 #banner {
-  background-color: cadetblue;
   grid-area: banner;
   height: 46%;
 }
 #parties {
-  background-color: blue;
   grid-area: parties;
   min-height: 27%;
 }
 #wathing {
-  background-color: blueviolet;
   grid-area: wathing;
   min-height: 27%;
 }
