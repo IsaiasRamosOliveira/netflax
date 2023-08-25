@@ -4,9 +4,9 @@
   background-image:url("/assets/imgs/banner/blade_runner.jpg");
   background-size: cover;
   width: 95%;
-  min-height: 45%;
-  max-height: 45%;
-  margin-left: 2%;
+  min-height: 380px;
+  max-height: 380px;
+  margin: auto;
   border-radius: 32px;
   flex-direction: column;
 }
