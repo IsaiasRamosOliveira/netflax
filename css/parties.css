@@ -61,13 +61,14 @@
 }
 
 .parties_card {
-  overflow: hidden;
   width: 22%;
   min-width: 190px;
   padding: 10px 25px;
   border-radius: 22px;
   background-color: var(--cardColor);
   transition: transform 0.3s ease-in-out;
+  overflow-y: hidden;
+  text-decoration: none;
 }
 
 .parties_card:hover {
