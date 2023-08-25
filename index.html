@@ -9,7 +9,13 @@
     />
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/banner.css" />
+    <link rel="stylesheet" href="css/aside.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/members.css" />
     <title>Netflix.</title>
   </head>
   <body id="container">
@@ -68,42 +74,243 @@
         </a>
       </div>
     </header>
-    <aside id="aside">aside</aside>
-    <aside id="members"></aside>
+    <aside id="aside" class="aside">
+      <header class="aside_header">
+        <a href="/">
+          <h1 class="aside_header_text">Netflix</h1>
+        </a>
+      </header>
+
+      <nav class="aside_navigation">
+        <h2>Menu</h2>
+
+        <ul class="aside_list">
+          <li class="aside_list_item">
+            <a class="aside_list_link" href="">
+              <p class="material-symbols-outlined">explore</p>
+              <p class="aside_icon_text">Browse</p>
+            </a>
+          </li>
+          <li class="aside_list_item">
+            <a class="aside_list_link" href="">
+              <p class="material-symbols-outlined">favorite</p>
+              <p class="aside_icon_text">Watchlist</p>
+            </a>
+          </li>
+          <li class="aside_list_item">
+            <a class="aside_list_link" href="">
+              <p class="material-symbols-outlined">calendar_month</p>
+              <p class="aside_icon_text">Coming soon</p>
+            </a>
+          </li>
+        </ul>
+
+        <h2>Social</h2>
+
+        <ul class="aside_list">
+          <li class="aside_list_item">
+            <a class="aside_list_link" href="">
+              <p class="material-symbols-outlined">group</p>
+              <p class="aside_icon_text">Friends</p>
+            </a>
+          </li>
+          <li class="aside_list_item">
+            <a class="aside_list_link" href="">
+              <p class="material-symbols-outlined">diversity_3</p>
+              <p class="aside_icon_text">Parties</p>
+            </a>
+          </li>
+        </ul>
+
+        <h2>General</h2>
+
+        <ul class="aside_list">
+          <li class="aside_list_item">
+            <a class="aside_list_link" href="">
+              <p class="material-symbols-outlined">settings</p>
+              <p class="aside_icon_text">Settings</p>
+            </a>
+          </li>
+          <li class="aside_list_item">
+            <a class="aside_list_link" href="">
+              <p class="material-symbols-outlined">logout</p>
+              <p class="aside_icon_text">Log out</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="aside_box">
+        <img
+          class="aside_box_img"
+          src="/assets/imgs/aside/esquilo.jpg"
+          alt="esquilinho"
+        />
+        <p class="aside_box_title">Popcorn Addict</p>
+        <p class="aside_box_text">4/6 viewing time</p>
+        <a class="aside_box_link" href="">
+          <p class="aside_box_link_text">View challenges</p>
+        </a>
+      </div>
+    </aside>
+    <aside id="members">
+      <ul class="list_members">
+        <li class="members__btns">
+          <button class="members__btn--adicionar members__btn">
+            <img
+              src="assets/imgs/members/mais (1).png"
+              alt="botao de adicionar"
+              width="25px"
+              height="25px"
+            />
+          </button>
+        </li>
+        <li class="members__perfil--primeiro member">
+          <a href="/" class="member__link">
+            <picture class="member__pictures">
+              <img
+                class="member__img"
+                src="assets/imgs/members/bloom.jpg"
+                alt="fada do fogo - Bloom"
+                width="50px"
+                height="50px"
+              />
+            </picture>
+          </a>
+        </li>
+        <li class="member">
+          <a href="/" class="member__link">
+            <picture class="member__pictures">
+              <img
+                class="member__img"
+                src="assets/imgs/members/stella.jpg"
+                alt="fada do Sol - Stella"
+                width="50px"
+                height="50px"
+              />
+            </picture>
+          </a>
+        </li>
+        <li class="member">
+          <a href="/" class="member__link">
+            <picture class="member__pictures">
+              <img
+                class="member__img"
+                src="assets/imgs/members/musa.jpg"
+                alt="fada da musica - Musa"
+                width="50px"
+                height="50px"
+              />
+            </picture>
+          </a>
+        </li>
+        <li class="member">
+          <a href="/" class="member__link">
+            <picture class="member__pictures">
+              <img
+                class="member__img"
+                src="assets/imgs/members/flora.jpg"
+                alt="fada da natureza - Flora"
+                width="50px"
+                height="50px"
+              /> </picture
+          ></a>
+        </li>
+        <li class="member">
+          <a href="/" class="member__link">
+            <picture class="member__pictures">
+              <img
+                class="member__img"
+                src="assets/imgs/members/tecnica.jpg"
+                alt="fada da tecnologia - Tecna"
+                width="50px"
+                height="50px"
+              /> </picture
+          ></a>
+        </li>
+        <li class="member">
+          <a href="/" class="member__link"
+            ><picture class="member__pictures member__pictures--aisha">
+              <img
+                class="member__img"
+                src="assets/imgs/members/aisha.jpg"
+                alt="fada das ondas - Aisha"
+                width="50px"
+                height="50px"
+              /> </picture
+          ></a>
+        </li>
+        <li class="member">
+          <a href="/" class="member__link"
+            ><picture class="member__pictures member__pictures--roxy">
+              <img
+                class="member__img"
+                src="assets/imgs/members/roxy.jpg"
+                alt="fada dos animais - Roxy"
+                width="50px"
+                height="50px"
+              />
+            </picture>
+          </a>
+        </li>
+      </ul>
+    </aside>
     <main id="content">
-      <section id="banner" class="banner" >
-        
-          <div class="banner_header">
-            <p class="banner_header_xp">40XP</p>
-            <div class="banner_header_profile">
-              <img class="banner_header_profile_img" src="/assets/imgs/banner/batman.jpg" alt="">
-              <img class="banner_header_profile_img" src="/assets/imgs/banner/geralt.jpg" alt="">
-              <img class="banner_header_profile_img" src="/assets/imgs/banner/lobo.jpeg" alt="">
-            </div>
-            <p class="banner_header_text">+5 friends are wathing</p>
+      <section id="banner" class="banner">
+        <div class="banner_header">
+          <p class="banner_header_xp">40XP</p>
+          <div class="banner_header_profile">
+            <img
+              class="banner_header_profile_img"
+              src="/assets/imgs/banner/batman.jpg"
+              alt=""
+            />
+            <img
+              class="banner_header_profile_img"
+              src="/assets/imgs/banner/geralt.jpg"
+              alt=""
+            />
+            <img
+              class="banner_header_profile_img"
+              src="/assets/imgs/banner/lobo.jpeg"
+              alt=""
+            />
           </div>
+          <p class="banner_header_text">+5 friends are wathing</p>
+        </div>
 
-          <div class="banner_title">
-            <h2 class="banner_title_movie">Bladerunner 2049</h2>
-            <p class="banner_title_percentage">98% Match</p>
+        <div class="banner_title">
+          <h2 class="banner_title_movie">Bladerunner 2049</h2>
+          <p class="banner_title_percentage">98% Match</p>
+        </div>
+
+        <div class="banner_footer">
+          <div class="banner_footer_options">
+            <a class="banner_footer_watch_link" href="">
+              <h3 class="banner_footer_watch">Watch</h3>
+            </a>
+            <button class="banner_footer_add_button">
+              <p class="banner_footer_add">+</p>
+            </button>
           </div>
-
-          <div class="banner_footer">
-            <div class="banner_footer_options">
-              <a class="banner_footer_watch_link" href="">
-                <h3 class="banner_footer_watch">Watch</h3>
-              </a>
-              <button class="banner_footer_add_button">
-                <p class="banner_footer_add">+</p>
-              </button>
-            </div>
-            <div class="banner_footer_movies">
-              <img class="banner_footer_movies_img" src="/assets/imgs/banner/dark.jpg" alt="dark">
-              <img class="banner_footer_movies_img" src="/assets/imgs/banner/blade_runner2.png" alt="blade runner">
-              <img class="banner_footer_movies_img" src="/assets/imgs/banner/stranger_things.jpg" alt="stranger things">
-            </div>
+          <div class="banner_footer_movies">
+            <img
+              class="banner_footer_movies_img"
+              src="/assets/imgs/banner/dark.jpg"
+              alt="dark"
+            />
+            <img
+              class="banner_footer_movies_img"
+              src="/assets/imgs/banner/blade_runner2.png"
+              alt="blade runner"
+            />
+            <img
+              class="banner_footer_movies_img"
+              src="/assets/imgs/banner/stranger_things.jpg"
+              alt="stranger things"
+            />
           </div>
-
+        </div>
       </section>
       <section id="parties">parties</section>
       <section id="wathing">wathing</section>

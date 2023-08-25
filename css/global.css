@@ -1,56 +1,60 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-#header {
-    background-color: antiquewhite;
-    overflow: hidden;
-    grid-area: header;
+*::-webkit-scrollbar {
+  width: 6px;
 }
-#aside  {
-    background-color: aqua;
-    overflow: hidden;
-    grid-area: aside;
-}
-#members {
-    background-color: brown;
-    overflow: hidden;
-    grid-area: members;
+*::-webkit-scrollbar-thumb {
+  background-color: #2C2D35;
+  border-radius: 20px;
 }
 #container {
-    width: 80 px calc(100svw - 80px);
-    height: 100svh;
-    display: grid;
-    grid-template-columns: 19% 74.3% 6.7%;
-    grid-template-rows: 14% 1fr;
-    grid-template-areas: 
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 73% 7%;
+  grid-template-rows: 14% 1fr;
+  grid-template-areas:
     "aside header members"
     "aside content members";
-    background-color: violet;
+  background-color: violet;
 }
+
+#header {
+  background-color: antiquewhite;
+  overflow: hidden;
+  grid-area: header;
+}
+
+#aside {
+  background-color: aqua;
+  overflow: hidden;
+  grid-area: aside;
+}
+
+#members {
+  background-color: brown;
+  overflow: hidden;
+  grid-area: members;
+}
+
 #content {
-    grid-area: content;
-    overflow: scroll;
-    overflow-x: hidden;
-    background-color: chartreuse;
+  grid-area: content;
 }
 #banner {
-    background-color: cadetblue;
-    overflow: hidden;
-    grid-area: banner;
-    height: 46%;
+  background-color: cadetblue;
+  grid-area: banner;
+  height: 46%;
 }
 #parties {
-    background-color: blue;
-    overflow: hidden;
-    grid-area: parties;
-    min-height: 27%;
+  background-color: blue;
+  grid-area: parties;
+  min-height: 27%;
 }
 #wathing {
-    background-color: blueviolet;
-    overflow: hidden;
-    grid-area: wathing;
-    min-height: 27%;
+  background-color: blueviolet;
+  grid-area: wathing;
+  min-height: 27%;
 }
