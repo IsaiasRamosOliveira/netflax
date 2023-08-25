@@ -20,13 +20,18 @@
     "aside header members"
     "aside content members";
   overflow: hidden;
-  background: linear-gradient(to bottom, #222329, #17181C);
+  background: linear-gradient(to bottom, #222329, #17181c);
 }
 
 #header {
   overflow: hidden;
   grid-area: header;
   width: 100%;
+}
+#content {
+  grid-area: content;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 #aside {
@@ -42,15 +47,12 @@
 
 #banner {
   grid-area: banner;
-  height: 46%;
 }
 #parties {
   grid-area: parties;
-  min-height: 27%;
 }
 #wathing {
   grid-area: wathing;
-  min-height: 27%;
 }
 
 #content {
@@ -62,7 +64,7 @@
   #container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 14% 86%;
+    grid-template-rows: 14% 1fr;
     grid-template-areas: "header" "content";
   }
 }
