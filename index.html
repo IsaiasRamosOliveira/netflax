@@ -7,18 +7,18 @@
       name="description"
       content="O projeto Netflix foi desenvolvido para representar a criação de um layout semelhante à grande empresa de streaming de vídeos Netflix."
     />
-    <link rel="stylesheet" href="css/pallets.css" />
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/banner.css" />
-    <link rel="stylesheet" href="css/aside.css" />
-    <link rel="stylesheet" href="css/wathing.css" />
-    <link rel="stylesheet" href="css/parties.css" />
+    <link rel="stylesheet" href="src/assets/css/global.css" />
+    <link rel="stylesheet" href="src/assets/css/pallets.css" />
+    <link rel="stylesheet" href="src/assets/css/header.css" />
+    <link rel="stylesheet" href="src/assets/css/banner.css" />
+    <link rel="stylesheet" href="src/assets/css/aside.css" />
+    <link rel="stylesheet" href="src/assets/css/wathing.css" />
+    <link rel="stylesheet" href="src/assets/css/parties.css" />
+    <link rel="stylesheet" href="src/assets/css/members.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/members.css" />
     <title>Netflix.</title>
   </head>
   <body id="container">
@@ -26,16 +26,16 @@
       <div class="header_nav">
         <div class="header_buttons">
           <button class="header_buttons_btn">
-            <img src="assets/imgs/header/arrow-left.png" alt="returnButton" />
+            <img src="src/assets/imgs/header/arrow-left.png" alt="returnButton" />
           </button>
           <button class="header_buttons_btn">
-            <img src="assets/imgs/header/arrow-right.png" alt="returnButton" />
+            <img src="src/assets/imgs/header/arrow-right.png" alt="returnButton" />
           </button>
         </div>
         <div class="header_input">
           <img
             class="header_input_image_left"
-            src="assets/imgs/header/search-img.png"
+            src="src/assets/imgs/header/search-img.png"
             alt=""
           />
           <input
@@ -47,7 +47,7 @@
           />
           <img
             class="header_input_image_right"
-            src="assets/imgs/header/microphone.png"
+            src="src/assets/imgs/header/microphone.png"
             alt=""
           />
         </div>
@@ -56,18 +56,18 @@
         <div class="header_icons">
           <a class="header_icons_anchor" href="">
             <img
-              src="assets/imgs/header/notifications-notified.png"
+              src="src/assets/imgs/header/notifications-notified.png"
               alt="notifications"
             />
           </a>
           <a class="header_icons_anchor" href="">
-            <img src="assets/imgs/header/chats-notified.png" alt="chats" />
+            <img src="src/assets/imgs/header/chats-notified.png" alt="chats" />
           </a>
         </div>
         <a class="header_user">
           <img
             class="header_user_picture"
-            src="assets/imgs/header/user-img.png"
+            src="src/assets/imgs/header/user-img.png"
             alt="user-picture"
           />
           <div class="header_user_info">
@@ -146,7 +146,7 @@
       <div class="aside_box">
         <img
           class="aside_box_img"
-          src="/assets/imgs/aside/esquilo.jpg"
+          src="src/assets/imgs/aside/esquilo.jpg"
           alt="esquilinho"
         />
         <p class="aside_box_title">Popcorn Addict</p>
@@ -161,7 +161,7 @@
         <li class="members__btns">
           <button class="members__btn--adicionar members__btn">
             <img
-              src="assets/imgs/members/mais (1).png"
+              src="src/assets/imgs/members/mais (1).png"
               alt="botao de adicionar"
               width="25px"
               height="25px"
@@ -173,7 +173,7 @@
             <picture class="member__pictures">
               <img
                 class="member__img"
-                src="assets/imgs/members/bloom.jpg"
+                src="src/assets/imgs/members/bloom.jpg"
                 alt="fada do fogo - Bloom"
                 width="50px"
                 height="50px"
@@ -186,7 +186,7 @@
             <picture class="member__pictures">
               <img
                 class="member__img"
-                src="assets/imgs/members/stella.jpg"
+                src="src/assets/imgs/members/stella.jpg"
                 alt="fada do Sol - Stella"
                 width="50px"
                 height="50px"
@@ -199,7 +199,7 @@
             <picture class="member__pictures">
               <img
                 class="member__img"
-                src="assets/imgs/members/musa.jpg"
+                src="src/assets/imgs/members/musa.jpg"
                 alt="fada da musica - Musa"
                 width="50px"
                 height="50px"
@@ -212,7 +212,7 @@
             <picture class="member__pictures">
               <img
                 class="member__img"
-                src="assets/imgs/members/flora.jpg"
+                src="src/assets/imgs/members/flora.jpg"
                 alt="fada da natureza - Flora"
                 width="50px"
                 height="50px"
@@ -224,7 +224,7 @@
             <picture class="member__pictures">
               <img
                 class="member__img"
-                src="assets/imgs/members/tecnica.jpg"
+                src="src/assets/imgs/members/tecnica.jpg"
                 alt="fada da tecnologia - Tecna"
                 width="50px"
                 height="50px"
@@ -236,7 +236,7 @@
             ><picture class="member__pictures member__pictures--aisha">
               <img
                 class="member__img"
-                src="assets/imgs/members/aisha.jpg"
+                src="src/assets/imgs/members/aisha.jpg"
                 alt="fada das ondas - Aisha"
                 width="50px"
                 height="50px"
@@ -248,7 +248,7 @@
             ><picture class="member__pictures member__pictures--roxy">
               <img
                 class="member__img"
-                src="assets/imgs/members/roxy.jpg"
+                src="src/assets/imgs/members/roxy.jpg"
                 alt="fada dos animais - Roxy"
                 width="50px"
                 height="50px"
@@ -259,15 +259,25 @@
       </ul>
     </aside>
     <main id="content">
-      
       <section id="banner" class="banner">
-        
         <div class="banner__header">
           <p class="banner__xp">40XP</p>
           <picture class="banner__profile">
-            <img class="banner__pimg banner__pimg--scale" src="/assets/imgs/banner/batman.jpg" alt="">
-            <img class="banner__pimg banner__pimg--scale" src="/assets/imgs/banner/geralt.jpg" alt="">
-            <img class="banner__pimg banner__pimg--scale" src="/assets/imgs/banner/lobo.jpeg" alt="">
+            <img
+              class="banner__pimg banner__pimg--scale"
+              src="src/assets/imgs/banner/batman.jpg"
+              alt=""
+            />
+            <img
+              class="banner__pimg banner__pimg--scale"
+              src="src/assets/imgs/banner/geralt.jpg"
+              alt=""
+            />
+            <img
+              class="banner__pimg banner__pimg--scale"
+              src="src/assets/imgs/banner/lobo.jpeg"
+              alt=""
+            />
           </picture>
           <p class="banner__friends">+5 friends are wathing</p>
         </div>
@@ -287,12 +297,23 @@
             </button>
           </div>
           <picture class="banner__list">
-            <img class="banner__mimg banner__mimg--border" src="/assets/imgs/banner/dark.jpg" alt="dark">
-            <img class="banner__mimg banner__mimg--border" src="/assets/imgs/banner/blade_runner2.png" alt="blade runner">
-            <img class="banner__mimg banner__mimg--border" src="/assets/imgs/banner/stranger_things.jpg" alt="stranger things">
+            <img
+              class="banner__mimg banner__mimg--border"
+              src="src/assets/imgs/banner/dark.jpg"
+              alt="dark"
+            />
+            <img
+              class="banner__mimg banner__mimg--border"
+              src="src/assets/imgs/banner/blade_runner2.png"
+              alt="blade runner"
+            />
+            <img
+              class="banner__mimg banner__mimg--border"
+              src="src/assets/imgs/banner/stranger_things.jpg"
+              alt="stranger things"
+            />
           </picture>
-        </div> 
-
+        </div>
       </section>
 
       <section id="parties" class="parties">
@@ -300,30 +321,30 @@
           <div class="parties_titleAndScroll">
             <p class="parties_title">Parties</p>
             <div class="parties_scrollBar">
-                <div class="parties_scrollbar_switch"></div>
+              <div class="parties_scrollbar_switch"></div>
             </div>
           </div>
           <div class="parties_cards">
             <a href="" class="parties_card">
               <div class="parties_card_top">
                 <img
-                  src="src/assets/parties/capa do filme 1.jpeg"
+                  src="src/assets/imgs/parties/capa do filme 1.jpeg"
                   alt="Miniatura do Filme"
                   class="parties_card_movieCover"
                 />
                 <picture class="parties_card_watchTogether">
-                  <img 
-                    src="src/assets/parties/usuario 1.jpeg"
+                  <img
+                    src="src/assets/imgs/parties/usuario 1.jpeg"
                     alt="Usuario1"
                     class="parties_card_watcher parties_card_watcher-1"
                   />
                   <img
-                    src="src/assets/parties/usuario 2.jpeg"
+                    src="src/assets/imgs/parties/usuario 2.jpeg"
                     alt="Usuario2"
                     class="parties_card_watcher parties_card_watcher-2"
                   />
                   <img
-                    src="src/assets/parties/usuario 3.jpeg"
+                    src="src/assets/imgs/parties/usuario 3.jpeg"
                     alt="Usuario3"
                     class="parties_card_watcher parties_card_watcher-3"
                   />
@@ -345,17 +366,17 @@
                 />
                 <picture class="parties_card_watchTogether">
                   <img
-                    src="src/assets/parties/usuario 1.jpeg"
+                    src="src/assets/imgs/parties/usuario 1.jpeg"
                     alt="Usuario1"
                     class="parties_card_watcher parties_card_watcher-1"
                   />
                   <img
-                    src="src/assets/parties/usuario 2.jpeg"
+                    src="src/assets/imgs/parties/usuario 2.jpeg"
                     alt="Usuario2"
                     class="parties_card_watcher parties_card_watcher-2"
                   />
                   <img
-                    src="src/assets/parties/usuario 3.jpeg"
+                    src="src/assets/imgs/parties/usuario 3.jpeg"
                     alt="Usuario3"
                     class="parties_card_watcher parties_card_watcher-3"
                   />
@@ -371,23 +392,23 @@
             <a href="" class="parties_card">
               <div class="parties_card_top">
                 <img
-                  src="src/assets/parties/capa do filme 4.jpeg"
+                  src="src/assets/imgs/parties/capa do filme 4.jpeg"
                   alt="Miniatura do Filme"
                   class="parties_card_movieCover"
                 />
                 <picture class="parties_card_watchTogether">
                   <img
-                    src="src/assets/parties/usuario 1.jpeg"
+                    src="src/assets/imgs/parties/usuario 1.jpeg"
                     alt="Usuario1"
                     class="parties_card_watcher parties_card_watcher-1"
                   />
                   <img
-                    src="src/assets/parties/usuario 2.jpeg"
+                    src="src/assets/imgs/parties/usuario 2.jpeg"
                     alt="Usuario2"
                     class="parties_card_watcher parties_card_watcher-2"
                   />
                   <img
-                    src="src/assets/parties/usuario 3.jpeg"
+                    src="src/assets/imgs/parties/usuario 3.jpeg"
                     alt="Usuario3"
                     class="parties_card_watcher parties_card_watcher-3"
                   />
@@ -396,31 +417,34 @@
               <div class="parties_card_bottom">
                 <h2 class="parties_card_title">Garuto</h2>
                 <p class="parties_card_description">
-                  Garuto, carrega um o selo ancestral do hamster 
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci magni neque a ullam, iusto aliquid, ipsa recusandae explicabo cum excepturi tempora id! Nam dicta culpa consequuntur illum? Id, est amet.
+                  Garuto, carrega um o selo ancestral do hamster Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Adipisci magni
+                  neque a ullam, iusto aliquid, ipsa recusandae explicabo cum
+                  excepturi tempora id! Nam dicta culpa consequuntur illum? Id,
+                  est amet.
                 </p>
               </div>
             </a>
             <a href="" class="parties_card">
               <div class="parties_card_top">
                 <img
-                  src="src/assets/parties/capa do filme 3.jpeg"
+                  src="src/assets/imgs/parties/capa do filme 3.jpeg"
                   alt="Miniatura do Filme"
                   class="parties_card_movieCover"
                 />
                 <picture class="parties_card_watchTogether">
                   <img
-                    src="src/assets/parties/usuario 1.jpeg"
+                    src="src/assets/imgs/parties/usuario 1.jpeg"
                     alt="Usuario1"
                     class="parties_card_watcher parties_card_watcher-1"
                   />
                   <img
-                    src="src/assets/parties/usuario 2.jpeg"
+                    src="src/assets/imgs/parties/usuario 2.jpeg"
                     alt="Usuario2"
                     class="parties_card_watcher parties_card_watcher-2"
                   />
                   <img
-                    src="src/assets/parties/usuario 3.jpeg"
+                    src="src/assets/imgs/parties/usuario 3.jpeg"
                     alt="Usuario3"
                     class="parties_card_watcher parties_card_watcher-3"
                   />
@@ -442,7 +466,7 @@
           <a class="movie">
             <p class="movie_relative_xp">10XP</p>
             <img
-              src="assets/imgs/wathing/Meu-Casamento-Feliz-ofc.webp"
+              src="src/assets/imgs/wathing/Meu-Casamento-Feliz-ofc.webp"
               alt=""
               class="movie_img"
               width="200"
@@ -454,7 +478,7 @@
           <a class="movie">
             <p class="movie_relative_xp">10XP</p>
             <img
-              src="assets/imgs/wathing/kimetsu-filme.webp"
+              src="src/assets/imgs/wathing/kimetsu-filme.webp"
               alt=""
               class="movie_img"
               width="200"
@@ -466,7 +490,7 @@
           <a class="movie">
             <p class="movie_relative_xp">40XP</p>
             <img
-              src="assets/imgs/wathing/suzame grande 2.webp"
+              src="src/assets/imgs/wathing/suzame grande 2.webp"
               alt=""
               class="movie_img"
               width="200"
@@ -478,7 +502,7 @@
           <a class="movie">
             <p class="movie_relative_xp">10XP</p>
             <img
-              src="assets/imgs/wathing/your-name-filme-ofc.jpg"
+              src="src/assets/imgs/wathing/your-name-filme-ofc.jpg"
               alt=""
               class="movie_img"
               width="200"
