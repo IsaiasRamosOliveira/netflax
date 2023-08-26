@@ -1,0 +1,108 @@
+#aside {
+    background: rgba(28, 29, 34, 255);
+    overflow-y: auto;
+}
+
+.aside, .aside_navigation, .aside_list, .aside_box {
+    display: flex;
+    flex-direction: column;
+}
+
+.aside_header, .aside_list_link, .aside_box, .aside_box_link {
+    display: flex;
+    align-items: center;
+}
+
+.aside {
+    font-family: sans-serif;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 240px;
+    height: 100%;
+    border-right: 2px solid #2f3336;
+}
+
+.aside_header {
+    justify-content: flex;
+    padding: 40px 28px;
+    width: 100%;
+}
+
+.aside_header_text {
+    font-size: 24px;
+}
+
+.aside_header_text::after {
+    content: ".";
+    color: red;
+}
+
+.aside_navigation {
+    gap: 24px;
+    width: 100%;
+    height: 100%;
+    padding: 0px 28px;
+    margin-bottom: 100px;
+}
+
+.aside:has(p), h2 {
+    font-size: 12px;
+} 
+
+.aside_list {
+    gap: 10px;
+}
+
+.aside_list_item {
+    display: flex;
+    gap: 40px;
+    margin: 0px -28px;
+    padding: 6px 28px;
+    font-size: 14px;
+}
+
+.aside_list_link {
+    gap: 16px;
+}
+
+.aside * {
+    text-decoration: none;
+    color: rgba(149, 150, 157, 255);
+}
+
+.aside_list_item:hover {
+    border-left: 2px solid red;
+}
+
+.aside_icon_text:hover, .aside_header_text, .aside_header, .aside_box_title, .aside_box_link_text {
+    color: #fff;
+}
+
+.aside_box {
+    width: 80%;
+    margin: 10%;
+    border-radius: 10%;
+    background: rgba(20,21,25,255);
+}
+
+.aside_box_img {
+    position: relative;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+}
+
+.aside_box_link {
+    flex-basis: 40px;
+    justify-content: center;
+    width: 80%;
+    margin: 15% 0 6% 0;
+    background: rgba(44,45,53,255);
+    border-radius: 8px;
+}
+
+.aside_box_title {
+    padding-bottom: 5px;
+    font-size: 14px;
+}

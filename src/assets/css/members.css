@@ -1,0 +1,47 @@
+#members {
+    height: 100%;
+}
+.list_members {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1e;
+    list-style: none;
+    gap: 20px;
+    height: 100%;
+}
+.members__btn,
+.member {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+}
+.members__btn--adicionar {
+    background-color: red;
+}
+.member__pictures {
+    position: relative;
+}
+.member__img,
+.members__btn {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+.member__pictures::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: -26px;
+    right: 3px;
+    border-radius: 100%;
+    background-color: #c3eebf;
+    position: absolute;
+}
+.member__pictures:is(.member__pictures--roxy, .member__pictures--aisha)::after {
+    content: "";
+    display: none;
+}

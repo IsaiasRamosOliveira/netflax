@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+*::-webkit-scrollbar {
+  width: 4px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #272830;
+  border-radius: 20px;
+}
+#container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 73% 7%;
+  grid-template-rows: 14% 1fr;
+  grid-template-areas:
+    "aside header members"
+    "aside content members";
+  overflow: hidden;
+  background: linear-gradient(to bottom, #222329, #17181c);
+}
+
+#header {
+  overflow: hidden;
+  grid-area: header;
+  width: 100%;
+}
+#content {
+  grid-area: content;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+#aside {
+  grid-area: aside;
+  overflow-y: auto;
+  border-right: 1.5px solid #272830;
+}
+
+#members {
+  overflow: hidden;
+  grid-area: members;
+}
+
+#banner {
+  grid-area: banner;
+}
+#parties {
+  grid-area: parties;
+}
+#wathing {
+  grid-area: wathing;
+}
+
+#content {
+  grid-area: content;
+  overflow-y: auto;
+}
+
+@media (max-width: 1024px) {
+  #container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 14% 1fr;
+    grid-template-areas: "header" "content";
+  }
+}

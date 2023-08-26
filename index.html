@@ -7,9 +7,14 @@
       name="description"
       content="O projeto Netflix foi desenvolvido para representar a criação de um layout semelhante à grande empresa de streaming de vídeos Netflix."
     />
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/aside.css" />
+    <link rel="stylesheet" href="src/assets/css/global.css" />
+    <link rel="stylesheet" href="src/assets/css/pallets.css" />
+    <link rel="stylesheet" href="src/assets/css/header.css" />
+    <link rel="stylesheet" href="src/assets/css/banner.css" />
+    <link rel="stylesheet" href="src/assets/css/aside.css" />
+    <link rel="stylesheet" href="src/assets/css/wathing.css" />
+    <link rel="stylesheet" href="src/assets/css/parties.css" />
+    <link rel="stylesheet" href="src/assets/css/members.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
@@ -21,16 +26,16 @@
       <div class="header_nav">
         <div class="header_buttons">
           <button class="header_buttons_btn">
-            <img src="assets/imgs/header/arrow-left.png" alt="returnButton" />
+            <img src="src/assets/imgs/header/arrow-left.png" alt="returnButton" />
           </button>
           <button class="header_buttons_btn">
-            <img src="assets/imgs/header/arrow-right.png" alt="returnButton" />
+            <img src="src/assets/imgs/header/arrow-right.png" alt="returnButton" />
           </button>
         </div>
         <div class="header_input">
           <img
             class="header_input_image_left"
-            src="assets/imgs/header/search-img.png"
+            src="src/assets/imgs/header/search-img.png"
             alt=""
           />
           <input
@@ -42,7 +47,7 @@
           />
           <img
             class="header_input_image_right"
-            src="assets/imgs/header/microphone.png"
+            src="src/assets/imgs/header/microphone.png"
             alt=""
           />
         </div>
@@ -51,19 +56,19 @@
         <div class="header_icons">
           <a class="header_icons_anchor" href="">
             <img
-              src="assets/imgs/header/notifications-notified.png"
+              src="src/assets/imgs/header/notifications-notified.png"
               alt="notifications"
             />
             
           </a>
           <a class="header_icons_anchor" href="">
-            <img src="assets/imgs/header/chats-notified.png" alt="chats" />
+            <img src="src/assets/imgs/header/chats-notified.png" alt="chats" />
           </a>
         </div>
         <a class="header_user">
           <img
             class="header_user_picture"
-            src="assets/imgs/header/user-img.png"
+            src="src/assets/imgs/header/user-img.png"
             alt="user-picture"
           />
           <div class="header_user_info">
@@ -74,7 +79,6 @@
       </div>
     </header>
     <aside id="aside" class="aside">
-
       <header class="aside_header">
         <a href="/">
           <h1 class="aside_header_text">Netflix</h1>
@@ -82,7 +86,6 @@
       </header>
 
       <nav class="aside_navigation">
-
         <h2>Menu</h2>
 
         <ul class="aside_list">
@@ -144,7 +147,7 @@
       <div class="aside_box">
         <img
           class="aside_box_img"
-          src="/assets/imgs/aside/esquilo.jpg"
+          src="src/assets/imgs/aside/esquilo.jpg"
           alt="esquilinho"
         />
         <p class="aside_box_title">Popcorn Addict</p>
@@ -153,13 +156,364 @@
           <p class="aside_box_link_text">View challenges</p>
         </a>
       </div>
-      
     </aside>
-    <aside id="members"></aside>
+    <aside id="members">
+      <ul class="list_members">
+        <li class="members__btns">
+          <button class="members__btn--adicionar members__btn">
+            <img
+              src="src/assets/imgs/members/mais (1).png"
+              alt="botao de adicionar"
+              width="25px"
+              height="25px"
+            />
+          </button>
+        </li>
+        <li class="members__perfil--primeiro member">
+          <a href="/" class="member__link">
+            <picture class="member__pictures">
+              <img
+                class="member__img"
+                src="src/assets/imgs/members/bloom.jpg"
+                alt="fada do fogo - Bloom"
+                width="50px"
+                height="50px"
+              />
+            </picture>
+          </a>
+        </li>
+        <li class="member">
+          <a href="/" class="member__link">
+            <picture class="member__pictures">
+              <img
+                class="member__img"
+                src="src/assets/imgs/members/stella.jpg"
+                alt="fada do Sol - Stella"
+                width="50px"
+                height="50px"
+              />
+            </picture>
+          </a>
+        </li>
+        <li class="member">
+          <a href="/" class="member__link">
+            <picture class="member__pictures">
+              <img
+                class="member__img"
+                src="src/assets/imgs/members/musa.jpg"
+                alt="fada da musica - Musa"
+                width="50px"
+                height="50px"
+              />
+            </picture>
+          </a>
+        </li>
+        <li class="member">
+          <a href="/" class="member__link">
+            <picture class="member__pictures">
+              <img
+                class="member__img"
+                src="src/assets/imgs/members/flora.jpg"
+                alt="fada da natureza - Flora"
+                width="50px"
+                height="50px"
+              /> </picture
+          ></a>
+        </li>
+        <li class="member">
+          <a href="/" class="member__link">
+            <picture class="member__pictures">
+              <img
+                class="member__img"
+                src="src/assets/imgs/members/tecnica.jpg"
+                alt="fada da tecnologia - Tecna"
+                width="50px"
+                height="50px"
+              /> </picture
+          ></a>
+        </li>
+        <li class="member">
+          <a href="/" class="member__link"
+            ><picture class="member__pictures member__pictures--aisha">
+              <img
+                class="member__img"
+                src="src/assets/imgs/members/aisha.jpg"
+                alt="fada das ondas - Aisha"
+                width="50px"
+                height="50px"
+              /> </picture
+          ></a>
+        </li>
+        <li class="member">
+          <a href="/" class="member__link"
+            ><picture class="member__pictures member__pictures--roxy">
+              <img
+                class="member__img"
+                src="src/assets/imgs/members/roxy.jpg"
+                alt="fada dos animais - Roxy"
+                width="50px"
+                height="50px"
+              />
+            </picture>
+          </a>
+        </li>
+      </ul>
+    </aside>
     <main id="content">
-      <section id="banner">banner</section>
-      <section id="parties">parties</section>
-      <section id="wathing">wathing</section>
+      <section id="banner" class="banner">
+        <div class="banner__header">
+          <p class="banner__xp">40XP</p>
+          <picture class="banner__profile">
+            <img
+              class="banner__pimg banner__pimg--scale"
+              src="src/assets/imgs/banner/batman.jpg"
+              alt=""
+            />
+            <img
+              class="banner__pimg banner__pimg--scale"
+              src="src/assets/imgs/banner/geralt.jpg"
+              alt=""
+            />
+            <img
+              class="banner__pimg banner__pimg--scale"
+              src="src/assets/imgs/banner/lobo.jpeg"
+              alt=""
+            />
+          </picture>
+          <p class="banner__friends">+5 friends are wathing</p>
+        </div>
+
+        <div class="banner__title">
+          <h2 class="banner__movie">Bladerunner 2049</h2>
+          <p class="banner__percentage">98% Match</p>
+        </div>
+
+        <div class="banner__footer">
+          <div class="banner__options">
+            <a class="banner__link" href="">
+              <h3 class="banner__watch">Watch</h3>
+            </a>
+            <button class="banner__button">
+              <p class="banner__add">+</p>
+            </button>
+          </div>
+          <picture class="banner__list">
+            <img
+              class="banner__mimg banner__mimg--border"
+              src="src/assets/imgs/banner/dark.jpg"
+              alt="dark"
+            />
+            <img
+              class="banner__mimg banner__mimg--border"
+              src="src/assets/imgs/banner/blade_runner2.png"
+              alt="blade runner"
+            />
+            <img
+              class="banner__mimg banner__mimg--border"
+              src="src/assets/imgs/banner/stranger_things.jpg"
+              alt="stranger things"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <section id="parties" class="parties">
+        <section class="parties_organizer">
+          <div class="parties_titleAndScroll">
+            <h2 class="parties_title">Parties</h2>
+            <div class="parties_scrollBar">
+              <div class="parties_scrollbar_switch"></div>
+            </div>
+          </div>
+          <div class="parties_cards">
+            <a href="" class="parties_card">
+              <div class="parties_card_top">
+                <img
+                  src="src/assets/imgs/parties/capa do filme 1.jpeg"
+                  alt="Miniatura do Filme"
+                  class="parties_card_movieCover"
+                />
+                <picture class="parties_card_watchTogether">
+                  <img
+                    src="src/assets/imgs/parties/usuario 1.jpeg"
+                    alt="Usuario1"
+                    class="parties_card_watcher parties_card_watcher-1"
+                  />
+                  <img
+                    src="src/assets/imgs/parties/usuario 2.jpeg"
+                    alt="Usuario2"
+                    class="parties_card_watcher parties_card_watcher-2"
+                  />
+                  <img
+                    src="src/assets/imgs/parties/usuario 3.jpeg"
+                    alt="Usuario3"
+                    class="parties_card_watcher parties_card_watcher-3"
+                  />
+                </picture>
+              </div>
+              <div class="parties_card_bottom">
+                <h2 class="parties_card_title">Gatinho Violino</h2>
+                <p class="parties_card_description">
+                  A historia do gatinho violinista
+                </p>
+              </div>
+            </a>
+            <a href="" class="parties_card">
+              <div class="parties_card_top">
+                <img
+                  src="src/assets/imgs/parties/capa do filme 2.jpeg"
+                  alt="Miniatura do Filme"
+                  class="parties_card_movieCover"
+                />
+                <picture class="parties_card_watchTogether">
+                  <img
+                    src="src/assets/imgs/parties/usuario 1.jpeg"
+                    alt="Usuario1"
+                    class="parties_card_watcher parties_card_watcher-1"
+                  />
+                  <img
+                    src="src/assets/imgs/parties/usuario 2.jpeg"
+                    alt="Usuario2"
+                    class="parties_card_watcher parties_card_watcher-2"
+                  />
+                  <img
+                    src="src/assets/imgs/parties/usuario 3.jpeg"
+                    alt="Usuario3"
+                    class="parties_card_watcher parties_card_watcher-3"
+                  />
+                </picture>
+              </div>
+              <div class="parties_card_bottom">
+                <h2 class="parties_card_title">Gatinho Djamba</h2>
+                <p class="parties_card_description">
+                  A historia do gatinho que caiu na Djamba
+                </p>
+              </div>
+            </a>
+            <a href="" class="parties_card">
+              <div class="parties_card_top">
+                <img
+                  src="src/assets/imgs/parties/capa do filme 4.jpeg"
+                  alt="Miniatura do Filme"
+                  class="parties_card_movieCover"
+                />
+                <picture class="parties_card_watchTogether">
+                  <img
+                    src="src/assets/imgs/parties/usuario 1.jpeg"
+                    alt="Usuario1"
+                    class="parties_card_watcher parties_card_watcher-1"
+                  />
+                  <img
+                    src="src/assets/imgs/parties/usuario 2.jpeg"
+                    alt="Usuario2"
+                    class="parties_card_watcher parties_card_watcher-2"
+                  />
+                  <img
+                    src="src/assets/imgs/parties/usuario 3.jpeg"
+                    alt="Usuario3"
+                    class="parties_card_watcher parties_card_watcher-3"
+                  />
+                </picture>
+              </div>
+              <div class="parties_card_bottom">
+                <h2 class="parties_card_title">Garuto</h2>
+                <p class="parties_card_description">
+                  Garuto, carrega um o selo ancestral do hamster Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Adipisci magni
+                  neque a ullam, iusto aliquid, ipsa recusandae explicabo cum
+                  excepturi tempora id! Nam dicta culpa consequuntur illum? Id,
+                  est amet.
+                </p>
+              </div>
+            </a>
+            <a href="" class="parties_card">
+              <div class="parties_card_top">
+                <img
+                  src="src/assets/imgs/parties/capa do filme 3.jpeg"
+                  alt="Miniatura do Filme"
+                  class="parties_card_movieCover"
+                />
+                <picture class="parties_card_watchTogether">
+                  <img
+                    src="src/assets/imgs/parties/usuario 1.jpeg"
+                    alt="Usuario1"
+                    class="parties_card_watcher parties_card_watcher-1"
+                  />
+                  <img
+                    src="src/assets/imgs/parties/usuario 2.jpeg"
+                    alt="Usuario2"
+                    class="parties_card_watcher parties_card_watcher-2"
+                  />
+                  <img
+                    src="src/assets/imgs/parties/usuario 3.jpeg"
+                    alt="Usuario3"
+                    class="parties_card_watcher parties_card_watcher-3"
+                  />
+                </picture>
+              </div>
+              <div class="parties_card_bottom">
+                <h2 class="parties_card_title">Cat Ball Z</h2>
+                <p class="parties_card_description">
+                  Gaku em busca dos 7 sachês magicos
+                </p>
+              </div>
+            </a>
+          </div>
+        </section>
+      </section>
+      <section id="wathing">
+        <h4 class="wathing_title">Continue Watching</h4>
+        <div class="movies_organizer_cards">
+          <a class="movie">
+            <p class="movie_relative_xp">10XP</p>
+            <img
+              src="src/assets/imgs/wathing/Meu-Casamento-Feliz-ofc.webp"
+              alt=""
+              class="movie_img"
+              width="200"
+              height="200"
+            />
+            <progress value="70" max="100" class="movie_progressbar"></progress>
+            <h4 class="movie_name">Meu Casamento Feliz</h4>
+          </a>
+          <a class="movie">
+            <p class="movie_relative_xp">10XP</p>
+            <img
+              src="src/assets/imgs/wathing/kimetsu-filme.webp"
+              alt=""
+              class="movie_img"
+              width="200"
+              height="200"
+            />
+            <progress value="60" max="100" class="movie_progressbar"></progress>
+            <h4 class="movie_name">Kimetsu no Yaiba</h4>
+          </a>
+          <a class="movie">
+            <p class="movie_relative_xp">40XP</p>
+            <img
+              src="src/assets/imgs/wathing/suzame grande 2.webp"
+              alt=""
+              class="movie_img"
+              width="200"
+              height="200"
+            />
+            <progress value="30" max="100" class="movie_progressbar"></progress>
+            <h4 class="movie_name">Suzume</h4>
+          </a>
+          <a class="movie">
+            <p class="movie_relative_xp">10XP</p>
+            <img
+              src="src/assets/imgs/wathing/your-name-filme-ofc.jpg"
+              alt=""
+              class="movie_img"
+              width="200"
+              height="200"
+            />
+            <progress value="80" max="100" class="movie_progressbar"></progress>
+            <h4 class="movie_name">Your</h4>
+          </a>
+        </div>
+      </section>
     </main>
   </body>
 </html>
