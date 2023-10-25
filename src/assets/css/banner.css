@@ -1,0 +1,113 @@
+.banner {
+  font-family: sans-serif;
+  font-size: 12px;
+  background-image:url("../imgs/banner/blade_runner.jpg");
+  background-size: cover;
+  width: 95%;
+  min-height: 380px;
+  max-height: 380px;
+  margin: auto;
+  border-radius: 32px;
+  flex-direction: column;
+}
+
+.banner__xp, .banner__options, .banner__watch, .banner__add, .banner__list  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner__xp, .banner__watch, .banner__button, .banner__mimg {
+  border-radius: 18px;
+}
+
+.banner, .banner__header, .banner__footer, .banner__title {
+  display: flex;
+  height: 100%;
+}
+
+.banner__header {
+  align-items: center;
+  height: 15%;
+  padding: 2% 0 0 3%;
+}
+
+.banner__xp {
+  background: #00000060;
+  width: 50px;
+  height: 30px;
+}
+
+
+.banner__profile {
+  padding: 0 1% 0 2%;
+}
+
+.banner__pimg {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-left: -10px;
+  cursor: pointer;
+}
+
+.banner__pimg--scale:hover {
+  width: 32px;
+  height: 32px;
+}
+
+.banner__title {
+  justify-content:flex-end;
+  flex-direction: column;
+  height: 50%;
+  padding: 9% 0 0 3%; 
+}
+
+.banner__movie {
+  font-size: 36px;
+  padding-bottom: 18px;
+}
+
+.banner__footer {
+  justify-content:space-between;
+  padding: 0 3% 0 3%;
+  height: 35%;
+}
+
+.banner__watch {
+  width: 80px;
+  height: 50px;
+  background-color: rgba(216,31,38,255);
+  margin-right: 15px;
+}
+
+.banner__button {
+  width: 50px;
+  height: 50px;
+  background-color: #c9c1c170;
+  font-size: 26px;
+  border: none;
+  cursor: pointer;
+}
+
+.banner__mimg {
+  width: 80px;
+  height: 50px;
+  border-radius: 8px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.banner__mimg--border:hover {
+  width: 100px;
+  height: 70px;
+  border: 4px solid rgba(223, 220, 217, 40%);
+}
+
+.banner, .banner__add, .banner__link {
+  color: #fff;
+}
+
+.banner__link {
+  text-decoration: none;
+}
