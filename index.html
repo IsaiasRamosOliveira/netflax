@@ -19,9 +19,18 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="src/components/Member/member.css" />
     <title>Netflix.</title>
   </head>
   <body id="container">
+    <div class="modalMember">
+      <form>
+        <label for="url">
+          <input type="text" name="url" id="url" placeholder="url" />
+        </label>
+        <button type="submit">Criar</button>
+      </form>
+    </div>
     <header id="header" class="header">
       <div class="header_nav">
         <div class="header_buttons">
@@ -524,5 +533,6 @@
     <script src="src/assets/js/banner.js"></script>
     <script src="src/assets/js/profiles.js"></script>
     <script src="src/assets/js/parties.js"></script>
+    <script src="src/components/Member/index.js"></script>
   </body>
 </html>
