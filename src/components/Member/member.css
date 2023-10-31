@@ -1,0 +1,12 @@
+.modalMember {
+  display: none;
+  position: absolute;
+  background: aliceblue;
+  border-radius: 12px;
+  padding: 20px;
+  width: 400px;
+  height: 340px;
+  z-index: 100;
+  right: 35%;
+  top: 25%;
+}
