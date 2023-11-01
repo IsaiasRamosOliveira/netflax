@@ -1,12 +1,13 @@
 .members__groupList {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: #1a1a1e;
     list-style: none;
     gap: 35px;
     height: 100%;
+    padding-top: 150px;
 }
 
 .item__add,
