@@ -15,22 +15,14 @@
     <link rel="stylesheet" href="src/assets/css/wathing.css" />
     <link rel="stylesheet" href="src/assets/css/parties.css" />
     <link rel="stylesheet" href="src/assets/css/members.css" />
+    <link rel="stylesheet" href="src/components/Party/party.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/components/Member/member.css" />
     <title>Netflix.</title>
   </head>
   <body id="container">
-    <div class="modalMember">
-      <form>
-        <label for="url">
-          <input type="text" name="url" id="url" placeholder="url" />
-        </label>
-        <button type="submit">Criar</button>
-      </form>
-    </div>
     <header id="header" class="header">
       <div class="header_nav">
         <div class="header_buttons">
@@ -340,7 +332,7 @@
             </div>
           </div>
           <div class="organizer__cards">
-            <a href="" class="cards__card">
+            <a href="#" class="cards__card">
               <div class="card__top">
                 <img
                   src="src/assets/imgs/parties/cadaver.jpg"
@@ -372,7 +364,7 @@
                 </p>
               </div>
             </a>
-            <a href="" class="cards__card">
+            <a href="#" class="cards__card">
               <div class="card__top">
                 <img
                   src="src/assets/imgs/parties/blade_runner.jpg"
@@ -404,7 +396,7 @@
                 </p>
               </div>
             </a>
-            <a href="" class="cards__card">
+            <a href="#" class="cards__card">
               <div class="card__top">
                 <img
                   src="src/assets/imgs/parties/monters.jpg"
@@ -436,7 +428,7 @@
                 </p>
               </div>
             </a>
-            <a href="" class="cards__card">
+            <a href="#" class="cards__card">
               <div class="card__top">
                 <img
                   src="src/assets/imgs/parties/friends.jpg"
@@ -524,11 +516,13 @@
           </a>
         </div>
       </section>
+      <div id="partyModal" class="hidden"></div>
     </main>
-    <script src="src/assets/js/main.js"></script>
+    <div id="fade" class="hidden"></div>
+    <script src="src/components/Party/party.js"></script>
+    <script src="src/assets/js/mai n.js"></script>
     <script src="src/assets/js/banner.js"></script>
     <script src="src/assets/js/profiles.js"></script>
     <script src="src/assets/js/parties.js"></script>
-    <script src="src/components/Member/index.js"></script>
   </body>
 </html>
