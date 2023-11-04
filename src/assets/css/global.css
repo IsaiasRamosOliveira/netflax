@@ -42,7 +42,7 @@
 }
 
 #members {
-  overflow: hidden;
+  overflow: auto;
   grid-area: members;
 }
 
