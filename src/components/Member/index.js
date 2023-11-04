@@ -4,10 +4,10 @@ const modal = document.querySelector(".modalMember");
 const submit = document.querySelector(".form__submit");
 
 const toggleModal = () => {
-  modal.classList.toggle("modalMember__hide");
+  [modal].forEach((el) => el.classList.toggle("modalMember__hide"));
 };
 
-[openbtn, closebtn].forEach((el) => {
+[openbtn, closebtn, submit].forEach((el) => {
   el.addEventListener("click", () => toggleModal());
 });
 
@@ -18,19 +18,20 @@ submit.addEventListener("click", (e) => {
   e.preventDefault();
   const url = document.querySelector("#url").value;
   data.push({ url });
-  data.forEach((post) => {  
+  data.forEach((post) => {
     member.innerHTML += `
     <li class="groupList__item">
-        <a href="/" class="item__listLink">
-          <picture class="listLink__pictures">
-            <img
-              class="pictures__profile"
-              src="${post.url}"
-              alt="profile picture"
-            />
-          </picture>
-        </a>
-      </li>
+      <a href="/" class="item__listLink">
+        <picture class="listLink__pictures">
+          <img
+            class="pictures__profile"
+            src="${post.url}"
+            alt="profile picture"
+          />
+        </picture>
+      </a>
+    </li>
   `;
   });
 });
+
