@@ -1,5 +1,5 @@
 .modalMember {
-  position: fixed;
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -14,9 +14,8 @@
   pointer-events: all;
 }
 
-.modalMember__hide {
-  opacity: 0;
-  pointer-events: none;
+.hidden {
+  display: none;
 }
 
 .modalMember__newMember {
@@ -29,7 +28,7 @@
 }
 
 .newMember__close,
-.form__submit {
+.form__submitMember {
   cursor: pointer;
   border: none;
   color: #fff;
@@ -54,7 +53,7 @@
   padding-left: 10px;
 }
 
-.form__submit {
+.form__submitMember {
   width: 80px;
   height: 35px;
   border-radius: 8px;

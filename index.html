@@ -23,19 +23,6 @@
     <title>Netflix.</title>
   </head>
   <body id="container">
-    <div class="modalMember modalMember__hide">
-      <div class="modalMember__newMember">
-        <button class="newMember__close">X</button>
-        <div class="newMember__profile">
-          <form class="profile__form">
-            <label class="form__url" for="url">
-              <input class="url__img" type="text" name="url" id="url" placeholder="Enter URL" required/>
-            </label>
-            <button class="form__submit" type="submit">Create</button>
-          </form>
-        </div>
-      </div>
-    </div>
     <header id="header" class="header">
       <div class="header_nav">
         <div class="header_buttons">
@@ -179,7 +166,7 @@
     <aside id="members">
       <ul class="members__groupList">
         <li class="groupList__item">
-          <button class="item__add">
+          <button class="item__add" onclick="openModalMember()">
             <img
               src="src/assets/imgs/members/mais (1).png"
               alt="button add"
@@ -520,8 +507,6 @@
     </main>
     <script src="src/assets/js/main.js"></script>
     <script src="src/assets/js/banner.js"></script>
-    <script src="src/assets/js/profiles.js"></script>
-    <script src="src/assets/js/parties.js"></script>
     <script src="src/components/Member/index.js"></script>
   </body>
 </html>
