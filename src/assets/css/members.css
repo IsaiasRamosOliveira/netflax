@@ -1,5 +1,6 @@
 #members {
     height: 100%;
+    width: 100%;
 }
 .list_members {
     display: flex;
@@ -10,6 +11,7 @@
     list-style: none;
     gap: 20px;
     height: 100%;
+    width: 100%;
 }
 .members__btn,
 .member {

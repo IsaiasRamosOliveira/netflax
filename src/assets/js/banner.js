@@ -1,4 +1,4 @@
-let banner = document.querySelector(".banner");
+let banner = document.querySelector("#banner");
 const btns = document.querySelectorAll(".banner__list .banner__mimg");
 
 btns.forEach((btn) => {
