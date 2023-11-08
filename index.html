@@ -21,9 +21,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/components/Member/modalMember.css" />
+    <link rel="stylesheet" href="src/components/Banner/modalBanner.css" />
     <title>Netflix.</title>
   </head>
   <body id="container">
+
+
+
     <header id="header" class="header">
       <div class="header_nav">
         <div class="header_buttons">
@@ -284,7 +288,7 @@
             <a class="banner__link" href="">
               <h3 class="banner__watch">Watch</h3>
             </a>
-            <button class="banner__button">
+            <button class="banner__button" onclick="openModalBanner()">
               <p class="banner__add">+</p>
             </button>
           </div>
@@ -505,9 +509,9 @@
     </main>
     <div id="fade" class="hidden"></div>
     <script src="src/components/Party/party.js"></script>
-    <script src="src/assets/js/banner.js"></script>
     <script src="src/assets/js/parties.js"></script>
+    <script src="src/assets/js/banner.js"></script>
     <script src="src/components/Member/index.js"></script>
-    <script src="src/components/Banner/index.js"></script>
+    <script src="src/components/Banner/banner.js"></script>
   </body>
 </html>

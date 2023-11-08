@@ -22,7 +22,7 @@
   border-radius: 18px;
 }
 
-#banner, .banner__header, .banner__footer, .banner__title {
+#banner, .banner__header, .banner__title {
   display: flex;
   height: 100%;
 }
@@ -70,7 +70,10 @@
 }
 
 .banner__footer {
-  justify-content:space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
   padding: 0 3% 0 3%;
 }
 
@@ -88,6 +91,11 @@
   font-size: 26px;
   border: none;
   cursor: pointer;
+}
+
+.banner__list {
+  width: 300px;
+  overflow-x: auto;
 }
 
 .banner__mimg {
@@ -143,6 +151,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    height: auto;
   }
   
   .banner__options {
