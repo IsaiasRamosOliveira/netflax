@@ -41,7 +41,7 @@
   border-radius: 10px 10px 0px 0px;
 }
 
-.movie__description {
+.movie__movieDescription {
   padding: 18px;
   color: #fff;
   font-size: 14px;
@@ -52,7 +52,7 @@
   position: relative;
 }
 
-.description__progressbar {
+.movieDescription__progressbar {
   position: absolute;
   top: -4px;
   left: 0;
@@ -60,12 +60,12 @@
   width: 100%;
 }
 
-.description__progressbar,
-.description__progressbar::-webkit-progress-value {
+.movieDescription__progressbar,
+.movieDescription__progressbar::-webkit-progress-value {
   background: red;
 }
 
-.description__title {
+.movieDescription__title {
   display: -webkit-box;
   background-color: #2c2d35;
   -webkit-box-orient: vertical;
