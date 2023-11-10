@@ -96,7 +96,7 @@
 .banner__list {
   justify-content: flex-start;
   padding-right: 20px;
-  width: 300px;
+  width: 320px;
   height: 80px;
   overflow-x: auto;
 }
