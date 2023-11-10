@@ -53,6 +53,11 @@ function closeModalBanner() {
   handleChangeBanner();
 }
 
+function closeEvent() {
+  const modalBanner = banner.querySelector(".modalBanner");
+  modalBanner.removeEventListener();
+}
+
 function submitFormOfBanner() {
   const modalBanner = document.querySelector(".modalBanner");
   const formBanner = document.querySelector(".form__submitBanner");
@@ -66,6 +71,7 @@ function submitFormOfBanner() {
       banner.innerHTML += ComponentBanner(post.urlBanner, post.name);
       closeModalBanner();
       handleChangeBanner();
+      closeEvent();
     });
   });
 }
