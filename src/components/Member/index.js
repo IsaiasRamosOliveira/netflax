@@ -1,11 +1,21 @@
-const container = document.querySelector("#container");
+const members = document.querySelector("#members");
 const data = [];
+
+members.addEventListener("click", (e) => {
+  const btns = e.target.getAttribute("class");
+  if (btns == "add__img") {
+    openModalMember();
+  }
+  if (btns == "newMember__close") {
+    closeModalMember();
+  }
+});
 
 function ComponentModal() {
   return `
     <div class="modalMember">
       <div class="modalMember__newMember">
-        <button class="newMember__close" onclick="closeModalMember()">X</button>
+        <button class="newMember__close">X</button>
         <div class="newMember__profile">
           <form class="profile__form">
             <label class="form__url" for="url">
@@ -36,13 +46,18 @@ function ComponentMember(url) {
 }
 
 function openModalMember() {
-  container.innerHTML += ComponentModal();
+  members.innerHTML += ComponentModal();
   submitFormOfMember();
 }
 
 function closeModalMember() {
-  const modal = container.querySelector(".modalMember__newMember");
+  const modal = members.querySelector(".modalMember__newMember");
   modal.parentElement.remove();
+}
+
+function closeEnventMember() {
+  const modal = members.querySelector(".modalMember__newMember");
+  modal.removeEventListener();
 }
 
 function submitFormOfMember() {
@@ -56,6 +71,7 @@ function submitFormOfMember() {
       const member = document.querySelector(".members__groupList");
       member.innerHTML += ComponentMember(post.url);
       closeModalMember();
+      closeEnventMember();
     });
   });
 }
