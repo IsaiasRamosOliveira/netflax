@@ -95,6 +95,7 @@
 
 .banner__list {
   width: 300px;
+  height: 80px;
   overflow-x: auto;
 }
 
