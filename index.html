@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="src/assets/css/wathing.css" />
     <link rel="stylesheet" href="src/assets/css/parties.css" />
     <link rel="stylesheet" href="src/assets/css/members.css" />
-    <link rel="stylesheet" href="src/components/Party/party.css">
+    <link rel="stylesheet" href="src/components/Party/party.css" />
     <link rel="stylesheet" href="src/assets/css/global.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
@@ -25,9 +25,6 @@
     <title>Netflix.</title>
   </head>
   <body id="container">
-
-
-
     <header id="header" class="header">
       <div class="header_nav">
         <div class="header_buttons">
@@ -172,10 +169,7 @@
       <ul class="members__groupList">
         <li class="groupList__item">
           <button class="item__add" onclick="openModalMember()">
-            <img
-              src="src/assets/imgs/members/mais (1).png"
-              alt="button add"
-            />
+            <img src="src/assets/imgs/members/mais (1).png" alt="button add" />
           </button>
         </li>
         <li class="groupList__item">
@@ -288,7 +282,7 @@
             <a class="banner__link" href="">
               <h3 class="banner__watch">Watch</h3>
             </a>
-            <button class="banner__button" onclick="openModalBanner()">
+            <button class="banner__button">
               <p class="banner__add">+</p>
             </button>
           </div>
@@ -348,9 +342,7 @@
               </div>
               <div class="card__bottom">
                 <h2 class="bottom__title">Cadaver</h2>
-                <p class="bottom__description">
-                  Horror Marathon!
-                </p>
+                <p class="bottom__description">Horror Marathon!</p>
               </div>
             </a>
             <a href="#" class="cards__card">
@@ -380,9 +372,7 @@
               </div>
               <div class="card__bottom">
                 <h2 class="bottom__title">Blade Runner 2049</h2>
-                <p class="bottom__description">
-                  Sci Fi binge
-                </p>
+                <p class="bottom__description">Sci Fi binge</p>
               </div>
             </a>
             <a href="#" class="cards__card">
@@ -412,9 +402,7 @@
               </div>
               <div class="card__bottom">
                 <h2 class="bottom__title">Monters Inc.</h2>
-                <p class="bottom__description">
-                  Don't make me grow up
-                </p>
+                <p class="bottom__description">Don't make me grow up</p>
               </div>
             </a>
             <a href="#" class="cards__card">
@@ -444,9 +432,7 @@
               </div>
               <div class="card__bottom">
                 <h2 class="bottom__title">Friends</h2>
-                <p class="bottom__description">
-                  We are on a break!
-                </p>
+                <p class="bottom__description">We are on a break!</p>
               </div>
             </a>
           </div>
@@ -508,10 +494,11 @@
       <div id="partyModal" class="hidden"></div>
     </main>
     <div id="fade" class="hidden"></div>
-    <script src="src/components/Party/party.js"></script>
-    <script src="src/assets/js/parties.js"></script>
-    <script src="src/assets/js/banner.js"></script>
+    <script type="module" src="src/components/Party/party.js"></script>
     <script src="src/components/Member/index.js"></script>
-    <script src="src/components/Banner/banner.js"></script>
+    <script src="src/assets/js/parties.js"></script>
+    <script type="module" src="src/components/Banner/banner.js"></script>
+    <script type="module" src="src/assets/js/banner.js"></script>
+    <script type="module" src="src/assets/js/main.js"></script>
   </body>
 </html>

@@ -1,11 +1,23 @@
-const containerBanner = document.querySelector("#container");
+import { handleChangeBanner } from "../../assets/js/banner.js";
+
+const banner = document.querySelector("#banner");
 const dataBanner = [];
+
+banner.addEventListener("click", (e) => {
+  const btn = e.target.getAttribute("class");
+  if (btn == "banner__add") {
+    openModalBanner();
+  }
+  if (btn == "newBanner__close") {
+    closeModalBanner();
+  }
+});
 
 function ComponentModalBanner() {
   return `
     <div class="modalBanner">
       <div class="modalBanner__newBanner">
-        <button class="newBanner__close" onclick="closeModalBanner()">X</button>
+        <button class="newBanner__close">X</button>
         <div class="newBanner__movie">
           <form class="movie__form">
             <label class="form__input">
@@ -31,13 +43,14 @@ function ComponentBanner(urlBanner, name) {
 }
 
 function openModalBanner() {
-  containerBanner.innerHTML += ComponentModalBanner();
+  banner.innerHTML += ComponentModalBanner();
   submitFormOfBanner();
 }
 
 function closeModalBanner() {
-  const modalBanner = containerBanner.querySelector(".modalBanner__newBanner");
+  const modalBanner = banner.querySelector(".modalBanner__newBanner");
   modalBanner.parentElement.remove();
+  handleChangeBanner();
 }
 
 function submitFormOfBanner() {
@@ -52,6 +65,7 @@ function submitFormOfBanner() {
       const banner = document.querySelector(".banner__list");
       banner.innerHTML += ComponentBanner(post.urlBanner, post.name);
       closeModalBanner();
+      handleChangeBanner();
     });
   });
 }
