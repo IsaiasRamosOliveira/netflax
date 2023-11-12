@@ -67,5 +67,6 @@ function submitFormOfBanner() {
       closeModalBanner();
       handleChangeBanner();
     });
+    dataBanner.pop();
   });
 }
