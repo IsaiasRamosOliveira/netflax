@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="src/assets/css/header.css" />
     <link rel="stylesheet" href="src/assets/css/banner.css" />
     <link rel="stylesheet" href="src/assets/css/aside.css" />
-    <link rel="stylesheet" href="src/assets/css/wathing.css" />
+    <link rel="stylesheet" href="src/assets/css/watching.css" />
     <link rel="stylesheet" href="src/assets/css/parties.css" />
     <link rel="stylesheet" href="src/assets/css/members.css" />
     <link rel="stylesheet" href="src/components/Party/party.css" />
@@ -168,8 +168,12 @@
     <aside id="members">
       <ul class="members__groupList">
         <li class="groupList__item">
-          <button class="item__add" onclick="openModalMember()">
-            <img src="src/assets/imgs/members/mais (1).png" alt="button add" />
+          <button class="item__add">
+            <img
+              class="item__add"
+              src="src/assets/imgs/members/mais (1).png"
+              alt="button add"
+            />
           </button>
         </li>
         <li class="groupList__item">
@@ -269,7 +273,7 @@
               alt=""
             />
           </picture>
-          <p class="banner__friends">+5 friends are wathing</p>
+          <p class="banner__friends">+5 friends are watching</p>
         </div>
 
         <div class="banner__title">
@@ -438,56 +442,82 @@
           </div>
         </section>
       </section>
-      <section id="wathing">
-        <h4 class="wathing_title">Continue Watching</h4>
-        <div class="movies_organizer_cards">
-          <a class="movie">
-            <p class="movie_relative_xp">10XP</p>
+      <section id="watching">
+        <h4 class="watching__title">Continue Watching</h4>
+        <div class="watching__movies">
+          <a class="movies__movie">
+            <p class="movie__relativeXp">10XP</p>
             <img
-              src="src/assets/imgs/wathing/Meu-Casamento-Feliz-ofc.webp"
+              src="src/assets/imgs/watching/hauntingwatching.jpg"
               alt=""
-              class="movie_img"
+              class="movie__img"
               width="200"
               height="200"
             />
-            <progress value="70" max="100" class="movie_progressbar"></progress>
-            <h4 class="movie_name">Meu Casamento Feliz</h4>
+            <span class="movie__movieDescription">
+              <progress
+                value="70"
+                max="100"
+                class="movieDescription__progressbar"
+              ></progress>
+              <h4 class="movieDescription__title">
+                Haunting of The Hill House
+              </h4>
+            </span>
           </a>
-          <a class="movie">
-            <p class="movie_relative_xp">10XP</p>
+          <a class="movies__movie">
+            <p class="movie__relativeXp">10XP</p>
             <img
-              src="src/assets/imgs/wathing/kimetsu-filme.webp"
+              src="src/assets/imgs/watching/ratchedwatching.jpg"
               alt=""
-              class="movie_img"
+              class="movie__img"
               width="200"
               height="200"
             />
-            <progress value="60" max="100" class="movie_progressbar"></progress>
-            <h4 class="movie_name">Kimetsu no Yaiba</h4>
+            <span class="movie__movieDescription">
+              <progress
+                value="60"
+                max="100"
+                class="movieDescription__progressbar"
+              ></progress>
+              <h4 class="movieDescription__title">Ratched</h4>
+            </span>
           </a>
-          <a class="movie">
-            <p class="movie_relative_xp">40XP</p>
+          <a class="movies__movie">
+            <p class="movie__relativeXp">40XP</p>
             <img
-              src="src/assets/imgs/wathing/suzame grande 2.webp"
+              src="src/assets/imgs/watching/elcaminowatching.jpg"
               alt=""
-              class="movie_img"
+              class="movie__img"
               width="200"
               height="200"
             />
-            <progress value="30" max="100" class="movie_progressbar"></progress>
-            <h4 class="movie_name">Suzume</h4>
+            <span class="movie__movieDescription">
+              <progress
+                value="30"
+                max="100"
+                class="movieDescription__progressbar"
+              ></progress>
+              <h4 class="movieDescription__title">El Camino</h4>
+            </span>
           </a>
-          <a class="movie">
-            <p class="movie_relative_xp">10XP</p>
+          <a class="movies__movie">
+            <p class="movie__relativeXp">10XP</p>
             <img
-              src="src/assets/imgs/wathing/your-name-filme-ofc.jpg"
+              src="src/assets/imgs/watching/strangerthingswatching.jpeg"
               alt=""
-              class="movie_img"
+              class="movie__img"
               width="200"
               height="200"
             />
-            <progress value="80" max="100" class="movie_progressbar"></progress>
-            <h4 class="movie_name">Your</h4>
+            <span class="movie__movieDescription">
+              <progress
+                value="80"
+                max="100"
+                class="movieDescription__progressbar"
+              ></progress>
+              <h4 class="movieDescription__title">Stranger Things</h4>
+            </span>
           </a>
         </div>
       </section>
@@ -495,10 +525,12 @@
     </main>
     <div id="fade" class="hidden"></div>
     <script type="module" src="src/components/Party/party.js"></script>
-    <script src="src/components/Member/index.js"></script>
-    <script src="src/assets/js/parties.js"></script>
-    <script type="module" src="src/components/Banner/banner.js"></script>
+    <script type="module" src="src/components/Member/index.js"></script>
+    <script type="module" src="src/components/Party/party.js"></script>
+    <script type="module" src="src/components/Banner/index.js"></script>
     <script type="module" src="src/assets/js/banner.js"></script>
     <script type="module" src="src/assets/js/main.js"></script>
+    <script type="module" src="src/utils/openModal.js"></script>
+    <script type="module" src="src/utils/closeModal.js"></script>
   </body>
 </html>
