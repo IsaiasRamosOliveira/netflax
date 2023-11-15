@@ -1,13 +1,17 @@
+import { closeModal } from "../../utils/closeModal.js";
+import { openModal } from "../../utils/openModal.js";
+
 const members = document.querySelector("#members");
 const data = [];
 
 members.addEventListener("click", (e) => {
-  const btns = e.target.getAttribute("class");
-  if (btns == "add__img") {
-    openModalMember();
+  const btn = e.target.getAttribute("class");
+  if (btn == "item__add") {
+    openModal(members, ComponentModal, submitFormOfMember);
   }
-  if (btns == "newMember__close") {
-    closeModalMember();
+  if (btn == "newMember__close") {
+    const modal = members.querySelector(".modalMember__newMember");
+    closeModal(modal);
   }
 });
 
@@ -45,21 +49,6 @@ function ComponentMember(url) {
     `;
 }
 
-function openModalMember() {
-  members.innerHTML += ComponentModal();
-  submitFormOfMember();
-}
-
-function closeModalMember() {
-  const modal = members.querySelector(".modalMember__newMember");
-  modal.parentElement.remove();
-}
-
-function closeEnventMember() {
-  const modal = members.querySelector(".modalMember__newMember");
-  modal.removeEventListener();
-}
-
 function submitFormOfMember() {
   const modal = document.querySelector(".modalMember");
   const form = document.querySelector(".form__submitMember");
@@ -71,7 +60,7 @@ function submitFormOfMember() {
       const member = document.querySelector(".members__groupList");
       member.innerHTML += ComponentMember(post.url);
       closeModalMember();
-      closeEnventMember();
     });
+    data.pop();
   });
 }
