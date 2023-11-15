@@ -3,8 +3,8 @@
   --scrollColor: #2C2D35;
   --scrollButtonColor: #707387;
   --titleColor: #fff;
-  --cardColor: #1e1f25;
-  --cardHoverColor: #25262D;
+  --cardColor: #25262d;
+  --cardHoverColor: #2c2d35;
   --cardTextColor: #65687A;
 }
 
@@ -62,12 +62,14 @@
   gap: 30px;
   justify-content: space-between;
   overflow-x: scroll;
+ padding: 10px;
 }
 
 .cards__card {
   display: flex;
   flex-direction: column;
-  height: 165px;
+  max-height: 300px;
+  min-height: 145px;
   max-width: 325px;
   min-width: 170px;
   flex: 1;
@@ -80,8 +82,8 @@
 }
 
 .cards__card:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease-in-out;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out 0s;
   background-color: var(--cardHoverColor);
 }
 
