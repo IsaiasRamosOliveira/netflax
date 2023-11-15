@@ -1,0 +1,61 @@
+#members {
+    height: 100%;
+    width: 100%;
+}
+.members__groupList {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #1a1a1e;
+    list-style: none;
+    gap: 35px;
+    height: 100%;
+    width: 100%;
+    padding-top: 150px;
+}
+
+.groupList__item:last-child {
+    padding-bottom: 100px;
+}
+
+.item__add,
+.groupList__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+}
+
+.item__add {
+    background-color: red;
+}
+
+.listLink__pictures {
+    position: relative;
+}
+
+.pictures__profile,
+.item__add {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+.listLink__pictures::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: -34px;
+    right: 3px;
+    border: 2px solid #1a1a1e;
+    border-radius: 50%;
+    background-color: #c3eebf;
+    position: absolute;
+}
+
+.listLink__pictures:is(.listLink__pictures--display)::after {
+    content: "";
+    display: none;
+}
