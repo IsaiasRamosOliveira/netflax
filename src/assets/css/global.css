@@ -6,6 +6,7 @@
 }
 *::-webkit-scrollbar {
   width: 4px;
+  height: 4px;
 }
 *::-webkit-scrollbar-thumb {
   background-color: #272830;
@@ -31,8 +32,7 @@
 }
 #content {
   grid-area: content;
-  overflow: scroll;
-  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 #aside {
