@@ -1,15 +1,15 @@
 #banner {
+  display: flex;
   font-family: sans-serif;
   font-size: 12px;
   background-image:url("../imgs/banner/blade_runner2.png");
   box-shadow: inset 2000px 2000px rgba(0, 0, 0, 0.35);
   background-size: cover;
-  width: 95%;
-  min-width: 280px;
+  width: 96%;
   height: 380px;
-  max-height: 380px;
   border-radius: 32px;
   flex-direction: column;
+  margin-left: 2%;
 }
 
 .banner__xp, .banner__options, .banner__watch, .banner__add, .banner__list  {
@@ -22,7 +22,7 @@
   border-radius: 18px;
 }
 
-#banner, .banner__header, .banner__title {
+.banner__header, .banner__title {
   display: flex;
   height: 100%;
 }
@@ -133,12 +133,30 @@
   .banner__movie {
     font-size: 24px;
   }
+
+  .banner__list {
+    margin: 10px;
+  }
 }
 
 @media (max-width: 480px) {
   #banner {
-    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 10px 10px;
     height: 260px;
+  }
+
+  .banner__header {
+    display: none;
+  }
+
+  .banner__percentage {
+    display: none;
+  }
+
+  .banner__button {
+    display: none;
   }
 
   .banner__title {
@@ -146,15 +164,12 @@
     padding: 80px 3% 20px 3%;
   }
 
-  .banner__movie {
-    font-size: 18px;
-  }
-
   .banner__footer {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     height: auto;
+    margin-right: 15px;
   }
   
   .banner__options {
@@ -164,7 +179,7 @@
   .banner__list {
     justify-content: flex-start;
     gap: 6px;
-    height: 60px;
+    height: 65px;
     width: 100%;
   }
 
@@ -180,14 +195,8 @@
   }
 
   .banner__watch {
-    width: 60px;
+    width: 80px;
     height: 40px;
-    border-radius: 14px;
-  }
-
-  .banner__button {
-    width: 40px;
-    height: 40px;
-    border-radius: 14px;
+    border-radius: 12px;
   }
 }
