@@ -168,7 +168,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    height: auto;
+    height: 350px;
     margin-right: 15px;
   }
   
@@ -179,8 +179,10 @@
   .banner__list {
     justify-content: flex-start;
     gap: 6px;
-    height: 65px;
+    height: 70px;
     width: 100%;
+    padding-bottom: 6px;
+    margin: 0;
   }
 
   .banner__mimg {
