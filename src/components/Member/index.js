@@ -1,11 +1,29 @@
-const container = document.querySelector("#container");
+import { closeModal } from "../../utils/closeModal.js";
+import { openModal } from "../../utils/openModal.js";
+
+const members = document.querySelector("#members");
 const data = [];
+
+members.addEventListener("click", (e) => {
+  const btn = e.target.getAttribute("class");
+  if (btn == "add__img") {
+    openModal(members, ComponentModal, submitFormOfMember);
+  }
+  if (btn == "newMember__close") {
+    const modal = members.querySelector(".modalMember__newMember");
+    closeModal(modal);
+  }
+  if (btn == "form__submitMember") {
+    const modal = members.querySelector(".modalMember__newMember");
+    closeModal(modal);
+  }
+});
 
 function ComponentModal() {
   return `
     <div class="modalMember">
       <div class="modalMember__newMember">
-        <button class="newMember__close" onclick="closeModalMember()">X</button>
+        <button class="newMember__close">X</button>
         <div class="newMember__profile">
           <form class="profile__form">
             <label class="form__url" for="url">
@@ -35,16 +53,6 @@ function ComponentMember(url) {
     `;
 }
 
-function openModalMember() {
-  container.innerHTML += ComponentModal();
-  submitFormOfMember();
-}
-
-function closeModalMember() {
-  const modal = container.querySelector(".modalMember__newMember");
-  modal.parentElement.remove();
-}
-
 function submitFormOfMember() {
   const modal = document.querySelector(".modalMember");
   const form = document.querySelector(".form__submitMember");
@@ -52,10 +60,15 @@ function submitFormOfMember() {
     e.preventDefault();
     const url = modal.querySelector("#url").value;
     data.push({ url });
+    if (url === "") {
+      alert("add a valid value");
+      data.pop();
+      return;
+    }
     data.forEach((post) => {
       const member = document.querySelector(".members__groupList");
       member.innerHTML += ComponentMember(post.url);
-      closeModalMember();
     });
+    data.pop();
   });
 }

@@ -1,19 +1,23 @@
 import { handleChangeBanner } from "../../assets/js/banner.js";
+import { closeModal } from "../../utils/closeModal.js";
+import { openModal } from "../../utils/openModal.js";
 
 const banner = document.querySelector("#banner");
-const dataBanner = [];
+const data = [];
 
 banner.addEventListener("click", (e) => {
   const btn = e.target.getAttribute("class");
   if (btn == "banner__add") {
-    openModalBanner();
+    openModal(banner, ComponentModal, submitFormOfBanner);
   }
   if (btn == "newBanner__close") {
-    closeModalBanner();
+    const modal = banner.querySelector(".modalBanner__newBanner");
+    closeModal(modal);
+    handleChangeBanner();
   }
 });
 
-function ComponentModalBanner() {
+function ComponentModal() {
   return `
     <div class="modalBanner">
       <div class="modalBanner__newBanner">
@@ -42,30 +46,22 @@ function ComponentBanner(urlBanner, name) {
   `;
 }
 
-function openModalBanner() {
-  banner.innerHTML += ComponentModalBanner();
-  submitFormOfBanner();
-}
-
-function closeModalBanner() {
-  const modalBanner = banner.querySelector(".modalBanner__newBanner");
-  modalBanner.parentElement.remove();
-  handleChangeBanner();
-}
-
 function submitFormOfBanner() {
-  const modalBanner = document.querySelector(".modalBanner");
+  const modal = document.querySelector(".modalBanner");
+  const modalBanner = banner.querySelector(".modalBanner__newBanner");
+
   const formBanner = document.querySelector(".form__submitBanner");
   formBanner.addEventListener("click", (e) => {
     e.preventDefault();
-    const urlBanner = modalBanner.querySelector("#urlBanner").value;
-    const name = modalBanner.querySelector("#name").value;
-    dataBanner.push({ urlBanner, name });
-    dataBanner.forEach((post) => {
+    const urlBanner = modal.querySelector("#urlBanner").value;
+    const name = modal.querySelector("#name").value;
+    data.push({ urlBanner, name });
+    data.forEach((post) => {
       const banner = document.querySelector(".banner__list");
       banner.innerHTML += ComponentBanner(post.urlBanner, post.name);
-      closeModalBanner();
+      closeModal(modalBanner);
       handleChangeBanner();
     });
+    data.pop();
   });
 }
