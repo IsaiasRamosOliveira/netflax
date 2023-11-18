@@ -11,13 +11,6 @@
 .parties__organizer {
   padding: 0 2%;
 }
-.organizer__cards::-webkit-scrollbar {
-  height: 8px;
-}
-.organizer__cards::-webkit-scrollbar-thumb {
-  background-color: #1e1f24;
-  border-radius: 20px;
-}
 .organizer__titleAndScroll,
 .titleAndScroll__scrollBar{
   display: flex;

@@ -7,19 +7,21 @@
       name="description"
       content="O projeto Netflix foi desenvolvido para representar a criação de um layout semelhante à grande empresa de streaming de vídeos Netflix."
     />
-    <link rel="stylesheet" href="src/assets/css/global.css" />
     <link rel="stylesheet" href="src/assets/css/pallets.css" />
     <link rel="stylesheet" href="src/assets/css/header.css" />
     <link rel="stylesheet" href="src/assets/css/banner.css" />
     <link rel="stylesheet" href="src/assets/css/aside.css" />
-    <link rel="stylesheet" href="src/assets/css/wathing.css" />
+    <link rel="stylesheet" href="src/assets/css/watching.css" />
     <link rel="stylesheet" href="src/assets/css/parties.css" />
     <link rel="stylesheet" href="src/assets/css/members.css" />
-    <link rel="stylesheet" href="src/components/Party/party.css">
+    <link rel="stylesheet" href="src/components/Party/party.css" />
+    <link rel="stylesheet" href="src/assets/css/global.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="src/components/Member/modalMember.css" />
+    <link rel="stylesheet" href="src/components/Banner/modalBanner.css" />
     <title>Netflix.</title>
   </head>
   <body id="container">
@@ -164,101 +166,82 @@
       </div>
     </aside>
     <aside id="members">
-      <ul class="list_members">
-        <li class="members__btns">
-          <button class="members__btn--adicionar members__btn">
-            <img
-              src="src/assets/imgs/members/mais (1).png"
-              alt="botao de adicionar"
-              width="25px"
-              height="25px"
-            />
+      <ul class="members__groupList">
+        <li class="groupList__item">
+          <button class="item__add">
+            <img class="add__img" src="src/assets/imgs/members/mais (1).png" alt="button add" />
           </button>
         </li>
-        <li class="members__perfil--primeiro member">
-          <a href="/" class="member__link">
-            <picture class="member__pictures">
+        <li class="groupList__item">
+          <a href="/" class="item__listLink">
+            <picture class="listLink__pictures">
               <img
-                class="member__img"
-                src="src/assets/imgs/members/bloom.jpg"
-                alt="fada do fogo - Bloom"
-                width="50px"
-                height="50px"
+                class="pictures__profile"
+                src="src/assets/imgs/members/live2.jpg"
+                alt="profile picture"
               />
             </picture>
           </a>
         </li>
-        <li class="member">
-          <a href="/" class="member__link">
-            <picture class="member__pictures">
+        <li class="groupList__item">
+          <a href="/" class="item__listLink">
+            <picture class="listLink__pictures">
               <img
-                class="member__img"
-                src="src/assets/imgs/members/stella.jpg"
-                alt="fada do Sol - Stella"
-                width="50px"
-                height="50px"
+                class="pictures__profile"
+                src="src/assets/imgs/members/live1.jpg"
+                alt="profile picture"
               />
             </picture>
           </a>
         </li>
-        <li class="member">
-          <a href="/" class="member__link">
-            <picture class="member__pictures">
+        <li class="groupList__item">
+          <a href="/" class="item__listLink">
+            <picture class="listLink__pictures">
               <img
-                class="member__img"
-                src="src/assets/imgs/members/musa.jpg"
-                alt="fada da musica - Musa"
-                width="50px"
-                height="50px"
+                class="pictures__profile"
+                src="src/assets/imgs/members/live3.jpg"
+                alt="profile picture"
               />
             </picture>
           </a>
         </li>
-        <li class="member">
-          <a href="/" class="member__link">
-            <picture class="member__pictures">
+        <li class="groupList__item">
+          <a href="/" class="item__listLink">
+            <picture class="listLink__pictures">
               <img
-                class="member__img"
-                src="src/assets/imgs/members/flora.jpg"
-                alt="fada da natureza - Flora"
-                width="50px"
-                height="50px"
+                class="pictures__profile"
+                src="src/assets/imgs/members/live4.jpg"
+                alt="profile picture"
               /> </picture
           ></a>
         </li>
-        <li class="member">
-          <a href="/" class="member__link">
-            <picture class="member__pictures">
+        <li class="groupList__item">
+          <a href="/" class="item__listLink">
+            <picture class="listLink__pictures">
               <img
-                class="member__img"
-                src="src/assets/imgs/members/tecnica.jpg"
-                alt="fada da tecnologia - Tecna"
-                width="50px"
-                height="50px"
+                class="pictures__profile"
+                src="src/assets/imgs/members/live5.jpg"
+                alt="profile picture"
               /> </picture
           ></a>
         </li>
-        <li class="member">
-          <a href="/" class="member__link"
-            ><picture class="member__pictures member__pictures--aisha">
+        <li class="groupList__item">
+          <a href="/" class="item__listLink"
+            ><picture class="listLink__pictures listLink__pictures--display">
               <img
-                class="member__img"
-                src="src/assets/imgs/members/aisha.jpg"
-                alt="fada das ondas - Aisha"
-                width="50px"
-                height="50px"
+                class="pictures__profile"
+                src="src/assets/imgs/members/live6.jpg"
+                alt="profile picture"
               /> </picture
           ></a>
         </li>
-        <li class="member">
-          <a href="/" class="member__link"
-            ><picture class="member__pictures member__pictures--roxy">
+        <li class="groupList__item">
+          <a href="/" class="item__listLink"
+            ><picture class="listLink__pictures listLink__pictures--display">
               <img
-                class="member__img"
-                src="src/assets/imgs/members/roxy.jpg"
-                alt="fada dos animais - Roxy"
-                width="50px"
-                height="50px"
+                class="pictures__profile"
+                src="src/assets/imgs/members/live7.jpg"
+                alt="profile picture"
               />
             </picture>
           </a>
@@ -266,7 +249,7 @@
       </ul>
     </aside>
     <main id="content">
-      <section id="banner" class="banner">
+      <section id="banner">
         <div class="banner__header">
           <p class="banner__xp">40XP</p>
           <picture class="banner__profile">
@@ -286,11 +269,11 @@
               alt=""
             />
           </picture>
-          <p class="banner__friends">+5 friends are wathing</p>
+          <p class="banner__friends">+5 friends are watching</p>
         </div>
 
         <div class="banner__title">
-          <h2 class="banner__movie">Bladerunner 2049</h2>
+          <h2 class="banner__movie">Blade Runner</h2>
           <p class="banner__percentage">98% Match</p>
         </div>
 
@@ -307,17 +290,17 @@
             <img
               class="banner__mimg banner__mimg--border"
               src="src/assets/imgs/banner/dark.jpg"
-              alt="dark"
+              alt="Dark"
             />
             <img
               class="banner__mimg banner__mimg--border"
               src="src/assets/imgs/banner/blade_runner2.png"
-              alt="blade runner"
+              alt="Blade Runner"
             />
             <img
               class="banner__mimg banner__mimg--border"
               src="src/assets/imgs/banner/stranger_things.jpg"
-              alt="stranger things"
+              alt="Stranger Things"
             />
           </picture>
         </div>
@@ -359,9 +342,7 @@
               </div>
               <div class="card__bottom">
                 <h2 class="bottom__title">Cadaver</h2>
-                <p class="bottom__description">
-                  Horror Marathon!
-                </p>
+                <p class="bottom__description">Horror Marathon!</p>
               </div>
             </a>
             <a href="#" class="cards__card">
@@ -391,9 +372,7 @@
               </div>
               <div class="card__bottom">
                 <h2 class="bottom__title">Blade Runner 2049</h2>
-                <p class="bottom__description">
-                  Sci Fi binge
-                </p>
+                <p class="bottom__description">Sci Fi binge</p>
               </div>
             </a>
             <a href="#" class="cards__card">
@@ -423,9 +402,7 @@
               </div>
               <div class="card__bottom">
                 <h2 class="bottom__title">Monters Inc.</h2>
-                <p class="bottom__description">
-                  Don't make me grow up
-                </p>
+                <p class="bottom__description">Don't make me grow up</p>
               </div>
             </a>
             <a href="#" class="cards__card">
@@ -455,74 +432,101 @@
               </div>
               <div class="card__bottom">
                 <h2 class="bottom__title">Friends</h2>
-                <p class="bottom__description">
-                  We are on a break!
-                </p>
+                <p class="bottom__description">We are on a break!</p>
               </div>
             </a>
           </div>
         </section>
       </section>
-      <section id="wathing">
-        <h4 class="wathing_title">Continue Watching</h4>
-        <div class="movies_organizer_cards">
-          <a class="movie">
-            <p class="movie_relative_xp">10XP</p>
+      <section id="watching">
+        <h4 class="watching__title">Continue Watching</h4>
+        <div class="watching__movies">
+          <a class="movies__movie">
+            <p class="movie__relativeXp">10XP</p>
             <img
-              src="src/assets/imgs/wathing/Meu-Casamento-Feliz-ofc.webp"
+              src="src/assets/imgs/watching/hauntingwatching.jpg"
               alt=""
-              class="movie_img"
+              class="movie__img"
               width="200"
               height="200"
             />
-            <progress value="70" max="100" class="movie_progressbar"></progress>
-            <h4 class="movie_name">Meu Casamento Feliz</h4>
+            <span class="movie__movieDescription">
+              <progress
+                value="70"
+                max="100"
+                class="movieDescription__progressbar"
+              ></progress>
+              <h4 class="movieDescription__title">
+                Haunting of The Hill House
+              </h4>
+            </span>
           </a>
-          <a class="movie">
-            <p class="movie_relative_xp">10XP</p>
+          <a class="movies__movie">
+            <p class="movie__relativeXp">10XP</p>
             <img
-              src="src/assets/imgs/wathing/kimetsu-filme.webp"
+              src="src/assets/imgs/watching/ratchedwatching.jpg"
               alt=""
-              class="movie_img"
+              class="movie__img"
               width="200"
               height="200"
             />
-            <progress value="60" max="100" class="movie_progressbar"></progress>
-            <h4 class="movie_name">Kimetsu no Yaiba</h4>
+            <span class="movie__movieDescription">
+              <progress
+                value="60"
+                max="100"
+                class="movieDescription__progressbar"
+              ></progress>
+              <h4 class="movieDescription__title">Ratched</h4>
+            </span>
           </a>
-          <a class="movie">
-            <p class="movie_relative_xp">40XP</p>
+          <a class="movies__movie">
+            <p class="movie__relativeXp">40XP</p>
             <img
-              src="src/assets/imgs/wathing/suzame grande 2.webp"
+              src="src/assets/imgs/watching/elcaminowatching.jpg"
               alt=""
-              class="movie_img"
+              class="movie__img"
               width="200"
               height="200"
             />
-            <progress value="30" max="100" class="movie_progressbar"></progress>
-            <h4 class="movie_name">Suzume</h4>
+            <span class="movie__movieDescription">
+              <progress
+                value="30"
+                max="100"
+                class="movieDescription__progressbar"
+              ></progress>
+              <h4 class="movieDescription__title">El Camino</h4>
+            </span>
           </a>
-          <a class="movie">
-            <p class="movie_relative_xp">10XP</p>
+          <a class="movies__movie">
+            <p class="movie__relativeXp">10XP</p>
             <img
-              src="src/assets/imgs/wathing/your-name-filme-ofc.jpg"
+              src="src/assets/imgs/watching/strangerthingswatching.jpeg"
               alt=""
-              class="movie_img"
+              class="movie__img"
               width="200"
               height="200"
             />
-            <progress value="80" max="100" class="movie_progressbar"></progress>
-            <h4 class="movie_name">Your</h4>
+            <span class="movie__movieDescription">
+              <progress
+                value="80"
+                max="100"
+                class="movieDescription__progressbar"
+              ></progress>
+              <h4 class="movieDescription__title">Stranger Things</h4>
+            </span>
           </a>
         </div>
       </section>
       <div id="partyModal" class="hidden"></div>
     </main>
     <div id="fade" class="hidden"></div>
-    <script src="src/components/Party/party.js"></script>
-    <script src="src/assets/js/mai n.js"></script>
-    <script src="src/assets/js/banner.js"></script>
-    <script src="src/assets/js/profiles.js"></script>
-    <script src="src/assets/js/parties.js"></script>
+    <script type="module" src="src/components/Party/party.js"></script>
+    <script type="module" src="src/components/Member/index.js"></script>
+    <script type="module" src="src/components/Party/party.js"></script>
+    <script type="module" src="src/components/Banner/index.js"></script>
+    <script type="module" src="src/assets/js/banner.js"></script>
+    <script type="module" src="src/assets/js/main.js"></script>
+    <script type="module" src="src/utils/openModal.js"></script>
+    <script type="module" src="src/utils/closeModal.js"></script>
   </body>
 </html>
