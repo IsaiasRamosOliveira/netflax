@@ -6,8 +6,8 @@
 }
 
 *::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 4px;
+  height: 4px;
 }
 
 *::-webkit-scrollbar-thumb {
@@ -20,7 +20,7 @@
   height: 100vh;
   display: grid;
   grid-template-columns: 1.4fr 8fr 0.6fr;
-  grid-template-rows: 1.2fr 8.8fr;
+  grid-template-rows: 90px 8.8fr;
   grid-template-areas:
     "aside header members"
     "aside content members";
@@ -83,7 +83,7 @@
       "header "
       "content";
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 9fr;
+    grid-template-rows: 80px 9fr;
   }
 
   #aside {
