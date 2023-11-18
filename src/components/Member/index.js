@@ -6,15 +6,14 @@ const data = [];
 
 members.addEventListener("click", (e) => {
   const btn = e.target.getAttribute("class");
+  const modal = members.querySelector(".modalMember__newMember");
   if (btn == "add__img") {
     openModal(members, ComponentModal, submitFormOfMember);
   }
   if (btn == "newMember__close") {
-    const modal = members.querySelector(".modalMember__newMember");
     closeModal(modal);
   }
   if (btn == "form__submitMember") {
-    const modal = members.querySelector(".modalMember__newMember");
     closeModal(modal);
   }
 });
