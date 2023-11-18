@@ -41,9 +41,14 @@
     gap: 24px;
     width: 100%;
     height: 100%;
-    padding: 0px 28px;
     margin-bottom: 100px;
 }
+
+.aside_navigation h2 {
+  width: 100%;
+  padding: 0px 28px;
+}
+
 
 .aside:has(p), h2 {
     font-size: 12px;
@@ -56,13 +61,13 @@
 .aside_list_item {
     display: flex;
     gap: 40px;
-    margin: 0px -28px;
-    padding: 6px 28px;
     font-size: 14px;
 }
 
 .aside_list_link {
+    width: 100%;
     gap: 16px;
+    padding: 6px 28px;
 }
 
 .aside * {
@@ -90,7 +95,7 @@
     bottom: 20px;
     width: 40px;
     height: 40px;
-    border-radius: 10%;
+    border-radius: 20%;
 }
 
 .aside_box_link {
