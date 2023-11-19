@@ -38,7 +38,8 @@ function ComponentModal() {
 
 function ComponentBanner(urlBanner, name) {
   return `
-    <img
+    <li class="list__img">
+      <img
       class="banner__mimg banner__mimg--border"
       src="${urlBanner}"
       alt="${name}"
