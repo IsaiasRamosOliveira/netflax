@@ -73,7 +73,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
+  height: 130px;
+  width: 100%;
   padding: 0 3% 0 3%;
 }
 
@@ -94,25 +95,36 @@
 }
 
 .banner__list {
+  list-style-type: none;
   justify-content: flex-start;
-  width: 310px;
+  width: 300px;
   height: 80px;
+  margin-left: 10px;
   overflow-x: auto;
+}
+
+.list__img {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  max-width: 100px;
+  height: 70px;
 }
 
 .banner__mimg {
   width: 80px;
   height: 50px;
   border-radius: 8px;
-  margin-left: 12px;
   cursor: pointer;
 }
 
 .banner__mimg--border:hover {
   width: 100px;
   height: 70px;
-  border: 4px solid rgba(223, 220, 217, 40%);
-  transition: 0.3s;
+  border: 3px solid rgba(223, 220, 217, 0.253);
+  transition: 0.3s ease-in-out;
 }
 
 #banner, .banner__add, .banner__link {
@@ -160,7 +172,7 @@
 
   .banner__title {
     height: 0;
-    padding: 80px 3% 20px 3%;
+    padding: 80px 3% 10px 3%;
   }
 
   .banner__footer {
@@ -177,11 +189,15 @@
 
   .banner__list {
     justify-content: flex-start;
-    gap: 6px;
-    height: 70px;
+    height: 75px;
     width: 100%;
-    padding-bottom: 6px;
-    margin: 0;
+    padding: 0;
+    margin: 0 0 0 -10px;
+  }
+
+  .list__img {
+    width: 100px;
+    height: 60px;
   }
 
   .banner__mimg {
@@ -191,10 +207,10 @@
   .banner__mimg--border:hover {
     width: 90px;
     height: 60px;
-    border: 4px solid rgba(223, 220, 217, 40%);
+    border: 3px solid rgba(223, 220, 217, 0.253);
     transition: 0.3s;
   }
-
+  
   .banner__watch {
     width: 80px;
     height: 40px;

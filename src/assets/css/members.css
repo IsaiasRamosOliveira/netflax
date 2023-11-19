@@ -9,10 +9,10 @@
     align-items: center;
     background-color: #1a1a1e;
     list-style: none;
-    gap: 35px;
+    gap: 30px;
     height: 100%;
     width: 100%;
-    padding-top: 150px;
+    padding-top: 120px;
 }
 
 .groupList__item:last-child {
