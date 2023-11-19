@@ -19,7 +19,6 @@ members.addEventListener("click", (e) => {
 });
 
 document.addEventListener("click", (e) => {
-  const modalOpen = document.querySelector(".add__img").getAttribute("class");
   if (e.target.getAttribute("class") !== "add__img") {
     const modal = members.querySelector(".modalMember__newMember");
     closeModal(modal)
