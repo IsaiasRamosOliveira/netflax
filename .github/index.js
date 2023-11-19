@@ -18,13 +18,6 @@ members.addEventListener("click", (e) => {
   }
 });
 
-document.addEventListener("click", (e) => {
-  if (e.target.getAttribute("class") !== "add__img") {
-    const modal = members.querySelector(".modalMember__newMember");
-    closeModal(modal)
-  }
-})
-
 function ComponentModal() {
   return `
     <div class="modalMember">
