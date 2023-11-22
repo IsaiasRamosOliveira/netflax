@@ -6,14 +6,24 @@ const data = [];
 
 members.addEventListener("click", (e) => {
   const btn = e.target.getAttribute("class");
-  if (btn == "item__add") {
+  const modal = members.querySelector(".modalMember__newMember");
+  if (btn == "add__img") {
     openModal(members, ComponentModal, submitFormOfMember);
   }
   if (btn == "newMember__close") {
-    const modal = members.querySelector(".modalMember__newMember");
+    closeModal(modal);
+  }
+  if (btn == "form__submitMember") {
     closeModal(modal);
   }
 });
+
+document.addEventListener("click", (e) => {
+  if (e.target.getAttribute("class") !== "add__img") {
+    const modal = members.querySelector(".modalMember__newMember");
+    closeModal(modal)
+  }
+})
 
 function ComponentModal() {
   return `
@@ -56,10 +66,14 @@ function submitFormOfMember() {
     e.preventDefault();
     const url = modal.querySelector("#url").value;
     data.push({ url });
+    if (url === "") {
+      alert("add a valid value");
+      data.pop();
+      return;
+    }
     data.forEach((post) => {
       const member = document.querySelector(".members__groupList");
       member.innerHTML += ComponentMember(post.url);
-      closeModalMember();
     });
     data.pop();
   });

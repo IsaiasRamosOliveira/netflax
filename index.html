@@ -1,536 +1,366 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="O projeto Netflix foi desenvolvido para representar a criação de um layout semelhante à grande empresa de streaming de vídeos Netflix."
-    />
-    <link rel="stylesheet" href="src/assets/css/pallets.css" />
-    <link rel="stylesheet" href="src/assets/css/header.css" />
-    <link rel="stylesheet" href="src/assets/css/banner.css" />
-    <link rel="stylesheet" href="src/assets/css/aside.css" />
-    <link rel="stylesheet" href="src/assets/css/watching.css" />
-    <link rel="stylesheet" href="src/assets/css/parties.css" />
-    <link rel="stylesheet" href="src/assets/css/members.css" />
-    <link rel="stylesheet" href="src/components/Party/party.css" />
-    <link rel="stylesheet" href="src/assets/css/global.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="src/components/Member/modalMember.css" />
-    <link rel="stylesheet" href="src/components/Banner/modalBanner.css" />
-    <title>Netflix.</title>
-  </head>
-  <body id="container">
-    <header id="header" class="header">
-      <div class="header_nav">
-        <div class="header_buttons">
-          <button class="header_buttons_btn">
-            <img
-              src="src/assets/imgs/header/arrow-left.png"
-              alt="returnButton"
-            />
-          </button>
-          <button class="header_buttons_btn">
-            <img
-              src="src/assets/imgs/header/arrow-right.png"
-              alt="returnButton"
-            />
-          </button>
-        </div>
-        <div class="header_input">
-          <img
-            class="header_input_image_left"
-            src="src/assets/imgs/header/search-img.png"
-            alt=""
-          />
-          <input
-            class="header_input_searchbar"
-            type="text"
-            name=""
-            id=""
-            placeholder="Search..."
-          />
-          <img
-            class="header_input_image_right"
-            src="src/assets/imgs/header/microphone.png"
-            alt=""
-          />
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="O projeto Netflix foi desenvolvido para representar a criação de um layout semelhante à grande empresa de streaming de vídeos Netflix." />
+  <link rel="stylesheet" href="src/assets/css/pallets.css" />
+  <link rel="stylesheet" href="src/assets/css/header.css" />
+  <link rel="stylesheet" href="src/assets/css/banner.css" />
+  <link rel="stylesheet" href="src/assets/css/aside.css" />
+  <link rel="stylesheet" href="src/assets/css/watching.css" />
+  <link rel="stylesheet" href="src/assets/css/parties.css" />
+  <link rel="stylesheet" href="src/assets/css/members.css" />
+  <link rel="stylesheet" href="src/components/Party/index.css" />
+  <link rel="stylesheet" href="src/assets/css/global.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="src/components/Member/index.css" />
+  <link rel="stylesheet" href="src/components/Banner/index.css" />
+  <title>Netflix.</title>
+</head>
+
+<body id="container">
+  <header id="header" class="header">
+    <div class="header_nav">
+      <div class="header_buttons">
+        <button class="header_buttons_btn">
+          <img src="src/assets/imgs/header/arrow-left.png" alt="returnButton" />
+        </button>
+        <button class="header_buttons_btn">
+          <img src="src/assets/imgs/header/arrow-right.png" alt="returnButton" />
+        </button>
       </div>
-      <div class="header_menu">
-        <div class="header_icons">
-          <a class="header_icons_anchor" href="">
-            <img
-              src="src/assets/imgs/header/notifications-notified.png"
-              alt="notifications"
-            />
-          </a>
-          <a class="header_icons_anchor" href="">
-            <img src="src/assets/imgs/header/chats-notified.png" alt="chats" />
-          </a>
-        </div>
-        <a class="header_user">
-          <img
-            class="header_user_picture"
-            src="src/assets/imgs/header/user-img.png"
-            alt="user-picture"
-          />
-          <div class="header_user_info">
-            <h3 class="header_user_info_name">Ramona F.</h3>
-            <p class="header_user_info_level">level 12</p>
-          </div>
+      <div class="header_input">
+        <img class="header_input_image_left" src="src/assets/imgs/header/search-img.png" alt="" />
+        <input class="header_input_searchbar" type="text" name="" id="" placeholder="Search..." />
+        <img class="header_input_image_right" src="src/assets/imgs/header/microphone.png" alt="" />
+      </div>
+    </div>
+    <div class="header_menu">
+      <div class="header_icons">
+        <a class="header_icons_anchor" href="">
+          <img src="src/assets/imgs/header/notifications-notified.png" alt="notifications" />
+        </a>
+        <a class="header_icons_anchor" href="">
+          <img src="src/assets/imgs/header/chats-notified.png" alt="chats" />
         </a>
       </div>
+      <a class="header_user">
+        <img class="header_user_picture" src="src/assets/imgs/header/user-img.png" alt="user-picture" />
+        <div class="header_user_info">
+          <h3 class="header_user_info_name">Ramona F.</h3>
+          <p class="header_user_info_level">level 12</p>
+        </div>
+      </a>
+    </div>
+  </header>
+  <aside id="aside" class="aside">
+    <header class="aside_header">
+      <a href="/">
+        <h1 class="aside_header_text">Netflix</h1>
+      </a>
     </header>
-    <aside id="aside" class="aside">
-      <header class="aside_header">
-        <a href="/">
-          <h1 class="aside_header_text">Netflix</h1>
-        </a>
-      </header>
 
-      <nav class="aside_navigation">
-        <h2>Menu</h2>
+    <nav class="aside_navigation">
+      <h2>Menu</h2>
 
-        <ul class="aside_list">
-          <li class="aside_list_item">
-            <a class="aside_list_link" href="">
-              <p class="material-symbols-outlined">explore</p>
-              <p class="aside_icon_text">Browse</p>
-            </a>
-          </li>
-          <li class="aside_list_item">
-            <a class="aside_list_link" href="">
-              <p class="material-symbols-outlined">favorite</p>
-              <p class="aside_icon_text">Watchlist</p>
-            </a>
-          </li>
-          <li class="aside_list_item">
-            <a class="aside_list_link" href="">
-              <p class="material-symbols-outlined">calendar_month</p>
-              <p class="aside_icon_text">Coming soon</p>
-            </a>
-          </li>
-        </ul>
-
-        <h2>Social</h2>
-
-        <ul class="aside_list">
-          <li class="aside_list_item">
-            <a class="aside_list_link" href="">
-              <p class="material-symbols-outlined">group</p>
-              <p class="aside_icon_text">Friends</p>
-            </a>
-          </li>
-          <li class="aside_list_item">
-            <a class="aside_list_link" href="">
-              <p class="material-symbols-outlined">diversity_3</p>
-              <p class="aside_icon_text">Parties</p>
-            </a>
-          </li>
-        </ul>
-
-        <h2>General</h2>
-
-        <ul class="aside_list">
-          <li class="aside_list_item">
-            <a class="aside_list_link" href="">
-              <p class="material-symbols-outlined">settings</p>
-              <p class="aside_icon_text">Settings</p>
-            </a>
-          </li>
-          <li class="aside_list_item">
-            <a class="aside_list_link" href="">
-              <p class="material-symbols-outlined">logout</p>
-              <p class="aside_icon_text">Log out</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="aside_box">
-        <img
-          class="aside_box_img"
-          src="src/assets/imgs/aside/esquilo.jpg"
-          alt="esquilinho"
-        />
-        <p class="aside_box_title">Popcorn Addict</p>
-        <p class="aside_box_text">4/6 viewing time</p>
-        <a class="aside_box_link" href="">
-          <p class="aside_box_link_text">View challenges</p>
-        </a>
-      </div>
-    </aside>
-    <aside id="members">
-      <ul class="members__groupList">
-        <li class="groupList__item">
-          <button class="item__add">
-            <img
-              class="item__add"
-              src="src/assets/imgs/members/mais (1).png"
-              alt="button add"
-            />
-          </button>
-        </li>
-        <li class="groupList__item">
-          <a href="/" class="item__listLink">
-            <picture class="listLink__pictures">
-              <img
-                class="pictures__profile"
-                src="src/assets/imgs/members/live2.jpg"
-                alt="profile picture"
-              />
-            </picture>
+      <ul class="aside_list">
+        <li class="aside_list_item">
+          <a class="aside_list_link" href="">
+            <p class="material-symbols-outlined">explore</p>
+            <p class="aside_icon_text">Browse</p>
           </a>
         </li>
-        <li class="groupList__item">
-          <a href="/" class="item__listLink">
-            <picture class="listLink__pictures">
-              <img
-                class="pictures__profile"
-                src="src/assets/imgs/members/live1.jpg"
-                alt="profile picture"
-              />
-            </picture>
+        <li class="aside_list_item">
+          <a class="aside_list_link" href="">
+            <p class="material-symbols-outlined">favorite</p>
+            <p class="aside_icon_text">Watchlist</p>
           </a>
         </li>
-        <li class="groupList__item">
-          <a href="/" class="item__listLink">
-            <picture class="listLink__pictures">
-              <img
-                class="pictures__profile"
-                src="src/assets/imgs/members/live3.jpg"
-                alt="profile picture"
-              />
-            </picture>
-          </a>
-        </li>
-        <li class="groupList__item">
-          <a href="/" class="item__listLink">
-            <picture class="listLink__pictures">
-              <img
-                class="pictures__profile"
-                src="src/assets/imgs/members/live4.jpg"
-                alt="profile picture"
-              /> </picture
-          ></a>
-        </li>
-        <li class="groupList__item">
-          <a href="/" class="item__listLink">
-            <picture class="listLink__pictures">
-              <img
-                class="pictures__profile"
-                src="src/assets/imgs/members/live5.jpg"
-                alt="profile picture"
-              /> </picture
-          ></a>
-        </li>
-        <li class="groupList__item">
-          <a href="/" class="item__listLink"
-            ><picture class="listLink__pictures listLink__pictures--display">
-              <img
-                class="pictures__profile"
-                src="src/assets/imgs/members/live6.jpg"
-                alt="profile picture"
-              /> </picture
-          ></a>
-        </li>
-        <li class="groupList__item">
-          <a href="/" class="item__listLink"
-            ><picture class="listLink__pictures listLink__pictures--display">
-              <img
-                class="pictures__profile"
-                src="src/assets/imgs/members/live7.jpg"
-                alt="profile picture"
-              />
-            </picture>
+        <li class="aside_list_item">
+          <a class="aside_list_link" href="">
+            <p class="material-symbols-outlined">calendar_month</p>
+            <p class="aside_icon_text">Coming soon</p>
           </a>
         </li>
       </ul>
-    </aside>
-    <main id="content">
-      <section id="banner">
-        <div class="banner__header">
-          <p class="banner__xp">40XP</p>
-          <picture class="banner__profile">
-            <img
-              class="banner__pimg banner__pimg--scale"
-              src="src/assets/imgs/banner/batman.jpg"
-              alt=""
-            />
-            <img
-              class="banner__pimg banner__pimg--scale"
-              src="src/assets/imgs/banner/geralt.jpg"
-              alt=""
-            />
-            <img
-              class="banner__pimg banner__pimg--scale"
-              src="src/assets/imgs/banner/lobo.jpeg"
-              alt=""
-            />
+
+      <h2>Social</h2>
+
+      <ul class="aside_list">
+        <li class="aside_list_item">
+          <a class="aside_list_link" href="">
+            <p class="material-symbols-outlined">group</p>
+            <p class="aside_icon_text">Friends</p>
+          </a>
+        </li>
+        <li class="aside_list_item">
+          <a class="aside_list_link" href="">
+            <p class="material-symbols-outlined">diversity_3</p>
+            <p class="aside_icon_text">Parties</p>
+          </a>
+        </li>
+      </ul>
+
+      <h2>General</h2>
+
+      <ul class="aside_list">
+        <li class="aside_list_item">
+          <a class="aside_list_link" href="">
+            <p class="material-symbols-outlined">settings</p>
+            <p class="aside_icon_text">Settings</p>
+          </a>
+        </li>
+        <li class="aside_list_item">
+          <a class="aside_list_link" href="">
+            <p class="material-symbols-outlined">logout</p>
+            <p class="aside_icon_text">Log out</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="aside_box">
+      <img class="aside_box_img" src="src/assets/imgs/aside/418f4071cc323c3791af0bc54782a6df.jpg" alt="iconePipoca" />
+      <p class="aside_box_title">Popcorn Addict</p>
+      <p class="aside_box_text">4/6 viewing time</p>
+      <a class="aside_box_link" href="">
+        <p class="aside_box_link_text">View challenges</p>
+      </a>
+    </div>
+  </aside>
+  <aside id="members">
+    <ul class="members__groupList">
+      <li class="groupList__item">
+        <button class="item__add">
+          <img class="add__img" src="src/assets/imgs/members/mais (1).png" alt="button add" />
+        </button>
+      </li>
+      <li class="groupList__item">
+        <a href="/" class="item__listLink">
+          <picture class="listLink__pictures">
+            <img class="pictures__profile" src="src/assets/imgs/members/live2.jpg" alt="profile picture" />
           </picture>
-          <p class="banner__friends">+5 friends are watching</p>
-        </div>
+        </a>
+      </li>
+      <li class="groupList__item">
+        <a href="/" class="item__listLink">
+          <picture class="listLink__pictures">
+            <img class="pictures__profile" src="src/assets/imgs/members/live1.jpg" alt="profile picture" />
+          </picture>
+        </a>
+      </li>
+      <li class="groupList__item">
+        <a href="/" class="item__listLink">
+          <picture class="listLink__pictures">
+            <img class="pictures__profile" src="src/assets/imgs/members/live3.jpg" alt="profile picture" />
+          </picture>
+        </a>
+      </li>
+      <li class="groupList__item">
+        <a href="/" class="item__listLink">
+          <picture class="listLink__pictures">
+            <img class="pictures__profile" src="src/assets/imgs/members/live4.jpg" alt="profile picture" />
+          </picture>
+        </a>
+      </li>
+      <li class="groupList__item">
+        <a href="/" class="item__listLink">
+          <picture class="listLink__pictures">
+            <img class="pictures__profile" src="src/assets/imgs/members/live5.jpg" alt="profile picture" />
+          </picture>
+        </a>
+      </li>
+      <li class="groupList__item">
+        <a href="/" class="item__listLink">
+          <picture class="listLink__pictures listLink__pictures--display">
+            <img class="pictures__profile" src="src/assets/imgs/members/live6.jpg" alt="profile picture" />
+          </picture>
+        </a>
+      </li>
+      <li class="groupList__item">
+        <a href="/" class="item__listLink">
+          <picture class="listLink__pictures listLink__pictures--display">
+            <img class="pictures__profile" src="src/assets/imgs/members/live7.jpg" alt="profile picture" />
+          </picture>
+        </a>
+      </li>
+    </ul>
+  </aside>
+  <main id="content">
+    <section id="banner">
+      <div class="banner__header">
+        <p class="banner__xp">40XP</p>
+        <picture class="banner__profile">
+          <img class="banner__pimg banner__pimg--scale" src="src/assets/imgs/banner/batman.jpg" alt="" />
+          <img class="banner__pimg banner__pimg--scale" src="src/assets/imgs/banner/geralt.jpg" alt="" />
+          <img class="banner__pimg banner__pimg--scale" src="src/assets/imgs/banner/lobo.jpeg" alt="" />
+        </picture>
+        <p class="banner__friends">+5 friends are watching</p>
+      </div>
 
-        <div class="banner__title">
-          <h2 class="banner__movie">Blade Runner</h2>
-          <p class="banner__percentage">98% Match</p>
-        </div>
+      <div class="banner__title">
+        <h2 class="banner__movie">Blade Runner</h2>
+        <p class="banner__percentage">98% Match</p>
+      </div>
 
-        <div class="banner__footer">
-          <div class="banner__options">
-            <a class="banner__link" href="">
-              <h3 class="banner__watch">Watch</h3>
-            </a>
-            <button class="banner__button">
-              <p class="banner__add">+</p>
-            </button>
+      <div class="banner__footer">
+        <div class="banner__options">
+          <a class="banner__link" href="">
+            <h3 class="banner__watch">Watch</h3>
+          </a>
+          <button class="banner__button">
+            <p class="banner__add">+</p>
+          </button>
+        </div>
+        <ul class="banner__list">
+          <li class="list__img">
+            <img class="banner__mimg banner__mimg--border" src="src/assets/imgs/banner/dark.jpg" alt="Dark" />
+          </li>
+          <li class="list__img">
+            <img class="banner__mimg banner__mimg--border" src="src/assets/imgs/banner/blade_runner2.png"
+              alt="Blade Runner" />
+          </li>
+          <li class="list__img">
+            <img class="banner__mimg banner__mimg--border" src="src/assets/imgs/banner/stranger_things.jpg"
+              alt="Stranger Things" />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="parties" class="parties">
+      <section class="parties__organizer">
+        <div class="organizer__titleAndScroll">
+          <h2 class="titleAndScroll__title">Parties</h2>
+          <div class="titleAndScroll__scrollBar">
+            <div class="scrollBar__switch"></div>
           </div>
-          <picture class="banner__list">
-            <img
-              class="banner__mimg banner__mimg--border"
-              src="src/assets/imgs/banner/dark.jpg"
-              alt="Dark"
-            />
-            <img
-              class="banner__mimg banner__mimg--border"
-              src="src/assets/imgs/banner/blade_runner2.png"
-              alt="Blade Runner"
-            />
-            <img
-              class="banner__mimg banner__mimg--border"
-              src="src/assets/imgs/banner/stranger_things.jpg"
-              alt="Stranger Things"
-            />
-          </picture>
         </div>
-      </section>
-
-      <section id="parties" class="parties">
-        <section class="parties__organizer">
-          <div class="organizer__titleAndScroll">
-            <h2 class="titleAndScroll__title">Parties</h2>
-            <div class="titleAndScroll__scrollBar">
-              <div class="scrollBar__switch"></div>
+        <div class="organizer__cards">
+          <a href="#" class="cards__card">
+            <div class="card__top">
+              <img src="src/assets/imgs/parties/cadaver.jpg" alt="Miniatura do Filme" class="top__movieCover" />
+              <picture class="top__watchTogether">
+                <img src="src/assets/imgs/parties/usuario1.jpg" alt="Usuario1"
+                  class="watchTogether__watcher watchTogether__watcher-1" />
+                <img src="src/assets/imgs/parties/usuario2.jpg" alt="Usuario2"
+                  class="watchTogether__watcher watchTogether__watcher-2" />
+                <img src="src/assets/imgs/parties/usuario3.jpg" alt="Usuario3"
+                  class="watchTogether__watcher watchTogether__watcher-3" />
+              </picture>
             </div>
-          </div>
-          <div class="organizer__cards">
-            <a href="#" class="cards__card">
-              <div class="card__top">
-                <img
-                  src="src/assets/imgs/parties/cadaver.jpg"
-                  alt="Miniatura do Filme"
-                  class="top__movieCover"
-                />
-                <picture class="top__watchTogether">
-                  <img
-                    src="src/assets/imgs/parties/usuario1.jpg"
-                    alt="Usuario1"
-                    class="watchTogether__watcher watchTogether__watcher-1"
-                  />
-                  <img
-                    src="src/assets/imgs/parties/usuario2.jpg"
-                    alt="Usuario2"
-                    class="watchTogether__watcher watchTogether__watcher-2"
-                  />
-                  <img
-                    src="src/assets/imgs/parties/usuario3.jpg"
-                    alt="Usuario3"
-                    class="watchTogether__watcher watchTogether__watcher-3"
-                  />
-                </picture>
-              </div>
-              <div class="card__bottom">
-                <h2 class="bottom__title">Cadaver</h2>
-                <p class="bottom__description">Horror Marathon!</p>
-              </div>
-            </a>
-            <a href="#" class="cards__card">
-              <div class="card__top">
-                <img
-                  src="src/assets/imgs/parties/blade_runner.jpg"
-                  alt="Miniatura do Filme"
-                  class="top__movieCover"
-                />
-                <picture class="top__watchTogether">
-                  <img
-                    src="src/assets/imgs/parties/usuario4.jpg"
-                    alt="Usuario1"
-                    class="watchTogether__watcher watchTogether__watcher-1"
-                  />
-                  <img
-                    src="src/assets/imgs/parties/usuario5.jpg"
-                    alt="Usuario2"
-                    class="watchTogether__watcher watchTogether__watcher-2"
-                  />
-                  <img
-                    src="src/assets/imgs/parties/usuario6.jpg"
-                    alt="Usuario3"
-                    class="watchTogether__watcher watchTogether__watcher-3"
-                  />
-                </picture>
-              </div>
-              <div class="card__bottom">
-                <h2 class="bottom__title">Blade Runner 2049</h2>
-                <p class="bottom__description">Sci Fi binge</p>
-              </div>
-            </a>
-            <a href="#" class="cards__card">
-              <div class="card__top">
-                <img
-                  src="src/assets/imgs/parties/monters.jpg"
-                  alt="Miniatura do Filme"
-                  class="top__movieCover"
-                />
-                <picture class="top__watchTogether">
-                  <img
-                    src="src/assets/imgs/parties/usuario7.jpg"
-                    alt="Usuario1"
-                    class="watchTogether__watcher watchTogether__watcher-1"
-                  />
-                  <img
-                    src="src/assets/imgs/parties/usuario8.jpg"
-                    alt="Usuario2"
-                    class="watchTogether__watcher watchTogether__watcher-2"
-                  />
-                  <img
-                    src="src/assets/imgs/parties/usuario9.jpg"
-                    alt="Usuario3"
-                    class="watchTogether__watcher watchTogether__watcher-3"
-                  />
-                </picture>
-              </div>
-              <div class="card__bottom">
-                <h2 class="bottom__title">Monters Inc.</h2>
-                <p class="bottom__description">Don't make me grow up</p>
-              </div>
-            </a>
-            <a href="#" class="cards__card">
-              <div class="card__top">
-                <img
-                  src="src/assets/imgs/parties/friends.jpg"
-                  alt="Miniatura do Filme"
-                  class="top__movieCover"
-                />
-                <picture class="top__watchTogether">
-                  <img
-                    src="src/assets/imgs/parties/usuario10.jpg"
-                    alt="Usuario1"
-                    class="watchTogether__watcher watchTogether__watcher-1"
-                  />
-                  <img
-                    src="src/assets/imgs/parties/usuario11.jpg"
-                    alt="Usuario2"
-                    class="watchTogether__watcher watchTogether__watcher-2"
-                  />
-                  <img
-                    src="src/assets/imgs/parties/usuario12.jpg"
-                    alt="Usuario3"
-                    class="watchTogether__watcher watchTogether__watcher-3"
-                  />
-                </picture>
-              </div>
-              <div class="card__bottom">
-                <h2 class="bottom__title">Friends</h2>
-                <p class="bottom__description">We are on a break!</p>
-              </div>
-            </a>
-          </div>
-        </section>
-      </section>
-      <section id="watching">
-        <h4 class="watching__title">Continue Watching</h4>
-        <div class="watching__movies">
-          <a class="movies__movie">
-            <p class="movie__relativeXp">10XP</p>
-            <img
-              src="src/assets/imgs/watching/hauntingwatching.jpg"
-              alt=""
-              class="movie__img"
-              width="200"
-              height="200"
-            />
-            <span class="movie__movieDescription">
-              <progress
-                value="70"
-                max="100"
-                class="movieDescription__progressbar"
-              ></progress>
-              <h4 class="movieDescription__title">
-                Haunting of The Hill House
-              </h4>
-            </span>
+            <div class="card__bottom">
+              <h2 class="bottom__title">Cadaver</h2>
+              <p class="bottom__description">Horror Marathon!</p>
+            </div>
           </a>
-          <a class="movies__movie">
-            <p class="movie__relativeXp">10XP</p>
-            <img
-              src="src/assets/imgs/watching/ratchedwatching.jpg"
-              alt=""
-              class="movie__img"
-              width="200"
-              height="200"
-            />
-            <span class="movie__movieDescription">
-              <progress
-                value="60"
-                max="100"
-                class="movieDescription__progressbar"
-              ></progress>
-              <h4 class="movieDescription__title">Ratched</h4>
-            </span>
+          <a href="#" class="cards__card">
+            <div class="card__top">
+              <img src="src/assets/imgs/parties/blade_runner.jpg" alt="Miniatura do Filme" class="top__movieCover" />
+              <picture class="top__watchTogether">
+                <img src="src/assets/imgs/parties/usuario4.jpg" alt="Usuario1"
+                  class="watchTogether__watcher watchTogether__watcher-1" />
+                <img src="src/assets/imgs/parties/usuario5.jpg" alt="Usuario2"
+                  class="watchTogether__watcher watchTogether__watcher-2" />
+                <img src="src/assets/imgs/parties/usuario6.jpg" alt="Usuario3"
+                  class="watchTogether__watcher watchTogether__watcher-3" />
+              </picture>
+            </div>
+            <div class="card__bottom">
+              <h2 class="bottom__title">Blade Runner 2049</h2>
+              <p class="bottom__description">Sci Fi binge</p>
+            </div>
           </a>
-          <a class="movies__movie">
-            <p class="movie__relativeXp">40XP</p>
-            <img
-              src="src/assets/imgs/watching/elcaminowatching.jpg"
-              alt=""
-              class="movie__img"
-              width="200"
-              height="200"
-            />
-            <span class="movie__movieDescription">
-              <progress
-                value="30"
-                max="100"
-                class="movieDescription__progressbar"
-              ></progress>
-              <h4 class="movieDescription__title">El Camino</h4>
-            </span>
+          <a href="#" class="cards__card">
+            <div class="card__top">
+              <img src="src/assets/imgs/parties/monters.jpg" alt="Miniatura do Filme" class="top__movieCover" />
+              <picture class="top__watchTogether">
+                <img src="src/assets/imgs/parties/usuario7.jpg" alt="Usuario1"
+                  class="watchTogether__watcher watchTogether__watcher-1" />
+                <img src="src/assets/imgs/parties/usuario8.jpg" alt="Usuario2"
+                  class="watchTogether__watcher watchTogether__watcher-2" />
+                <img src="src/assets/imgs/parties/usuario9.jpg" alt="Usuario3"
+                  class="watchTogether__watcher watchTogether__watcher-3" />
+              </picture>
+            </div>
+            <div class="card__bottom">
+              <h2 class="bottom__title">Monters Inc.</h2>
+              <p class="bottom__description">Don't make me grow up</p>
+            </div>
           </a>
-          <a class="movies__movie">
-            <p class="movie__relativeXp">10XP</p>
-            <img
-              src="src/assets/imgs/watching/strangerthingswatching.jpeg"
-              alt=""
-              class="movie__img"
-              width="200"
-              height="200"
-            />
-            <span class="movie__movieDescription">
-              <progress
-                value="80"
-                max="100"
-                class="movieDescription__progressbar"
-              ></progress>
-              <h4 class="movieDescription__title">Stranger Things</h4>
-            </span>
+          <a href="#" class="cards__card">
+            <div class="card__top">
+              <img src="src/assets/imgs/parties/friends.jpg" alt="Miniatura do Filme" class="top__movieCover" />
+              <picture class="top__watchTogether">
+                <img src="src/assets/imgs/parties/usuario10.jpg" alt="Usuario1"
+                  class="watchTogether__watcher watchTogether__watcher-1" />
+                <img src="src/assets/imgs/parties/usuario11.jpg" alt="Usuario2"
+                  class="watchTogether__watcher watchTogether__watcher-2" />
+                <img src="src/assets/imgs/parties/usuario12.jpg" alt="Usuario3"
+                  class="watchTogether__watcher watchTogether__watcher-3" />
+              </picture>
+            </div>
+            <div class="card__bottom">
+              <h2 class="bottom__title">Friends</h2>
+              <p class="bottom__description">We are on a break!</p>
+            </div>
           </a>
         </div>
       </section>
-      <div id="partyModal" class="hidden"></div>
-    </main>
-    <div id="fade" class="hidden"></div>
-    <script type="module" src="src/components/Party/party.js"></script>
-    <script type="module" src="src/components/Member/index.js"></script>
-    <script type="module" src="src/components/Party/party.js"></script>
-    <script type="module" src="src/components/Banner/index.js"></script>
-    <script type="module" src="src/assets/js/banner.js"></script>
-    <script type="module" src="src/assets/js/main.js"></script>
-    <script type="module" src="src/utils/openModal.js"></script>
-    <script type="module" src="src/utils/closeModal.js"></script>
-  </body>
+    </section>
+    <section id="watching">
+      <h4 class="watching__title">Continue Watching</h4>
+      <div class="watching__movies">
+        <a class="movies__movie">
+          <p class="movie__relativeXp">10XP</p>
+          <img src="src/assets/imgs/watching/hauntingwatching.jpg" alt="" class="movie__img" width="200" height="200" />
+          <span class="movie__movieDescription">
+            <progress value="70" max="100" class="movieDescription__progressbar"></progress>
+            <h4 class="movieDescription__title">
+              Haunting of The Hill House
+            </h4>
+          </span>
+        </a>
+        <a class="movies__movie">
+          <p class="movie__relativeXp">10XP</p>
+          <img src="src/assets/imgs/watching/ratchedwatching.jpg" alt="" class="movie__img" width="200" height="200" />
+          <span class="movie__movieDescription">
+            <progress value="60" max="100" class="movieDescription__progressbar"></progress>
+            <h4 class="movieDescription__title">Ratched</h4>
+          </span>
+        </a>
+        <a class="movies__movie">
+          <p class="movie__relativeXp">40XP</p>
+          <img src="src/assets/imgs/watching/elcaminowatching.jpg" alt="" class="movie__img" width="200" height="200" />
+          <span class="movie__movieDescription">
+            <progress value="30" max="100" class="movieDescription__progressbar"></progress>
+            <h4 class="movieDescription__title">El Camino</h4>
+          </span>
+        </a>
+        <a class="movies__movie">
+          <p class="movie__relativeXp">10XP</p>
+          <img src="src/assets/imgs/watching/strangerthingswatching.jpeg" alt="" class="movie__img" width="200"
+            height="200" />
+          <span class="movie__movieDescription">
+            <progress value="80" max="100" class="movieDescription__progressbar"></progress>
+            <h4 class="movieDescription__title">Stranger Things</h4>
+          </span>
+        </a>
+      </div>
+    </section>
+    <div id="partyModal" class="hidden"></div>
+  </main>
+  <div id="fade" class="hidden"></div>
+  <script type="module" src="src/components/Member/index.js"></script>
+  <script type="module" src="src/components/Party/index.js"></script>
+  <script type="module" src="src/components/Banner/index.js"></script>
+  <script type="module" src="src/assets/js/banner.js"></script>
+  <script type="module" src="src/assets/js/main.js"></script>
+  <script type="module" src="src/utils/openModal.js"></script>
+  <script type="module" src="src/utils/closeModal.js"></script>
+</body>
+
 </html>

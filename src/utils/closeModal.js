@@ -1,3 +1,6 @@
 export function closeModal(container) {
-  container.parentElement.remove();
+  if (container) {
+    container.parentElement.remove();
+  }
+  return;
 }
