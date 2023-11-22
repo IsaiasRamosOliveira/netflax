@@ -8,7 +8,7 @@ const data = [];
 banner.addEventListener("click", (e) => {
   const btn = e.target.getAttribute("class");
   const modal = banner.querySelector(".modalBanner__newBanner");
-  if (btn == "banner__add") {
+  if (btn == "button__text") {
     openModal(banner, ComponentModal, submitFormOfBanner);
   }
   if (btn == "newBanner__close") {
@@ -22,7 +22,7 @@ banner.addEventListener("click", (e) => {
 
 document.addEventListener("click", (e) => {
   const modal = banner.querySelector(".modalBanner__newBanner");
-  if (!modal.contains(e.target) && e.target.getAttribute("class") !== "banner__add") {
+  if (!modal.contains(e.target) && e.target.getAttribute("class") !== "button__text") {
     closeModal(modal);
   }
 });
@@ -48,9 +48,9 @@ function ComponentModal() {
 
 function ComponentBanner(urlBanner, name) {
   return `
-    <li class="list__img">
+    <li class="list__imgs">
       <img
-      class="banner__mimg banner__mimg--border"
+      class="imgs__img imgs__img--border"
       src="${urlBanner}"
       alt="${name}"
     />
@@ -71,7 +71,7 @@ function submitFormOfBanner() {
       return;
     }
     data.forEach((post) => {
-      const banner = document.querySelector(".banner__list");
+      const banner = document.querySelector(".footer__list");
       banner.innerHTML += ComponentBanner(post.urlBanner, post.name);
       handleChangeBanner();
     });
