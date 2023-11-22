@@ -7,13 +7,23 @@ const data = [];
 
 banner.addEventListener("click", (e) => {
   const btn = e.target.getAttribute("class");
+  const modal = banner.querySelector(".modalBanner__newBanner");
   if (btn == "banner__add") {
     openModal(banner, ComponentModal, submitFormOfBanner);
   }
   if (btn == "newBanner__close") {
-    const modal = banner.querySelector(".modalBanner__newBanner");
     closeModal(modal);
     handleChangeBanner();
+  }
+  if (btn == "form__submitBanner") {
+    closeModal(modal);
+  }
+});
+
+document.addEventListener("click", (e) => {
+  const modal = banner.querySelector(".modalBanner__newBanner");
+  if (!modal.contains(e.target) && e.target.getAttribute("class") !== "banner__add") {
+    closeModal(modal);
   }
 });
 
@@ -49,18 +59,20 @@ function ComponentBanner(urlBanner, name) {
 
 function submitFormOfBanner() {
   const modal = document.querySelector(".modalBanner");
-  const modalBanner = banner.querySelector(".modalBanner__newBanner");
-
   const formBanner = document.querySelector(".form__submitBanner");
   formBanner.addEventListener("click", (e) => {
     e.preventDefault();
     const urlBanner = modal.querySelector("#urlBanner").value;
     const name = modal.querySelector("#name").value;
     data.push({ urlBanner, name });
+    if (urlBanner === "" || name === "") {
+      alert("add a valid value");
+      data.pop();
+      return;
+    }
     data.forEach((post) => {
       const banner = document.querySelector(".banner__list");
       banner.innerHTML += ComponentBanner(post.urlBanner, post.name);
-      closeModal(modalBanner);
       handleChangeBanner();
     });
     data.pop();
