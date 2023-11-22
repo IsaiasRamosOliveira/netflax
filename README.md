@@ -1,11 +1,11 @@
 <h1 align="center"> Netflix Gamified </h1>
 
 <p align="center">
-    Programa promovido por Isaías Ramos para o ensino de tecnologias. <br>
+  Program promoted by Isaías Ramos for teaching technology. <br>
 </p>
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
@@ -17,7 +17,7 @@
 
 ## 🚀 Tecnologias
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+This project was developed with the following technologies:
 
 - HTML e CSS
 - JavaScript
@@ -25,7 +25,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🔖 Layout
 
-Você pode visualizar o autor da imagem através [DESSE LINK](https://dribbble.com/shots/15591899-Netflix-Gamified).
+You can view the author of the image through: [DESSE LINK](https://dribbble.com/shots/15591899-Netflix-Gamified).
 
 
 
