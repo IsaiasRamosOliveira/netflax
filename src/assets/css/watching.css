@@ -4,7 +4,7 @@
   color: #fff;
 }
 
-.watching__movies {
+.watching__container {
   display: flex;
   align-items: start;
   gap: 30px;
@@ -14,7 +14,7 @@
   overflow-x: scroll;
 }
 
-.movies__movie {
+.container__cards {
   cursor: pointer;
   position: relative;
   max-height: 300px;
@@ -26,7 +26,7 @@
   border-radius: 16px;
 }
 
-.movie__relativeXp {
+.cards__icons {
   position: absolute;
   color: #fff;
   font-size: 12px;
@@ -35,13 +35,13 @@
   backdrop-filter: blur(8px);
 }
 
-.movie__img {
+.cards__movie {
   width: 100%;
   height: 100%;
   border-radius: 10px 10px 0px 0px;
 }
 
-.movie__movieDescription {
+.cards__description {
   padding: 18px;
   color: #fff;
   font-size: 14px;
@@ -52,7 +52,7 @@
   position: relative;
 }
 
-.movieDescription__progressbar {
+.cards__loading {
   position: absolute;
   top: -4px;
   left: 0;
@@ -60,12 +60,12 @@
   width: 100%;
 }
 
-.movieDescription__progressbar,
-.movieDescription__progressbar::-webkit-progress-value {
+.cards__loading,
+.cards__loading::-webkit-progress-value {
   background: red;
 }
 
-.movieDescription__title {
+.description__name {
   display: -webkit-box;
   background-color: #2c2d35;
   -webkit-box-orient: vertical;
@@ -76,9 +76,7 @@
   text-align: start;
 }
 
-.movies__movie:hover {
+.container__cards:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out 0s;
 }
-
-
