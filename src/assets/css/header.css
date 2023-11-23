@@ -4,53 +4,53 @@
 }
 
 .header,
-.header_nav,
-.header_menu {
+.header__nav,
+.header__menu {
     display: flex;
     height: 100%;
     align-items: center;
     position: relative;
 }
 
-.header_buttons,
-.header_input,
-.header_icons,
-.header_user,
-.header_buttons_btn {
+.nav__buttons,
+.nav__input,
+.menu__icons,
+.menu__user,
+.buttons__btn {
     display: flex;
     height: 100%;
     align-items: center;
 }
 
-.header_buttons img,
-.header_input,
-.header_icons {
+.nav__buttons img,
+.nav__input,
+.menu__icons {
     width: 12px;
 }
 
-.header_nav {
+.header__nav {
     width: 47%;
 }
 
-.header_buttons {
+.nav__buttons {
     width: 5%;
     justify-content: space-between;
     gap:8px;
 }
 
-.header_buttons_btn {
+.buttons__btn {
     background: none;
     border: none;
     cursor: pointer;
 }
 
-.header_input {
+.nav__input {
     width: 95%;
     height: 100%;
     margin: 0px 16px;
 }
 
-.header_input_searchbar {
+.input__searchbar {
     background-color: var(--backgroundColor);
     border-radius: 16px;
     height: 35%;
@@ -60,38 +60,38 @@
     color: var(--inputFontColor);
 }
 
-.header_input_image_left,
-.header_input_image_right {
+.input__image--left,
+.input__image--right {
     height: 15px;
     width: 15px;
     position: relative;
 }
 
-.header_input_image_left {
+.input__image--left {
     left: 25px;
 }
 
-.header_input_image_right {
+.input__image--right {
     right: 25px;
     width: 17px;
 }
 
-.header_menu {
+.header__menu {
     width: 53%;
     justify-content: right;
 }
 
-.header_icons {
+.menu__icons {
     width: 110px;
     gap: 35px;
 }
 
-.header_icons_anchor img {
+.icons__anchor img {
     width: 22px;
     height: 22px;
 }
 
-.header_user {
+.menu__user {
     cursor: pointer;
     width: 164px;
     color: white;
@@ -99,80 +99,80 @@
     gap: 20px;
 }
 
-.header_user_picture {
+.user__picture {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     padding: 4px;
     border-style: solid;
     border-color: var(--userBorderFullColor) var(--userBorderEmptyColor) var(--backgroundColor)
-        var(--userBorderFullColor);
+    var(--userBorderFullColor);
     border-width: 3px 3px 3px 3px;
 }
 
-.header_user_info_name {
+.info__name {
     font-size: 16px;
     color: var(--userFontColor);
 }
 
-.header_user_info_level {
+.info__level {
     font-size: 14px;
     color: var(--levelFontColor);
 }
 
 @media (max-width: 1250px) {
-  .header_user {
+  .menu__user {
     width: 60px;
   }
 
-  .header_nav {
+  .header__nav {
     width: calc(80% - 160px);
   }
 
-  .header_menu {
+  .header__menu {
     width: 160px;
   }
 
-  .header_user_picture {
+  .user__picture {
     width: 45px;
     height: 45px;
   }
 
-  .header_user_info {
+  .user__info {
     display: none;
   }
 
-  .header_buttons {
+  .nav__buttons {
     display: none;
   }
 
-  .header_input {
+  .nav__input {
     margin: 0;
   }
 }
 
 @media (max-width: 540px) {
-  .header_nav {
+  .header__nav {
     width: calc(100% - 160px);
   }
 }
 
 @media (max-width: 280px) {
-  .header_nav {
+  .header__nav {
     width: calc(100% - 124px);
   }
 
-  .header_menu {
+  .header__menu {
     width: 124px;
   }
 
-  .header_icons {
+  .menu__icons {
     width: 64px;
     gap: 10px;
     padding: 0 5px;
   }
 
-  .header_input {
+  .nav__input {
     width: 100%;
   }
 }
