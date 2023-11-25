@@ -24,6 +24,7 @@ document.addEventListener("click", (e) => {
   const modal = banner.querySelector(".modalBanner__newBanner");
   if (modal && modal.contains && !modal.contains(e.target) && e.target.getAttribute("class") !== "button__text") {
     closeModal(modal);
+    handleChangeBanner();
   }
 });
 
