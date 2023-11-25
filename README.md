@@ -25,7 +25,7 @@ This project was developed with the following technologies:
 
 ## 🔖 Layout
 
-You can view the author of the image through: [DESSE LINK](https://dribbble.com/shots/15591899-Netflix-Gamified).
+You can view the author of the image through: [this LINK](https://dribbble.com/shots/15591899-Netflix-Gamified).
 
 
 
