@@ -19,7 +19,7 @@ members.addEventListener("click", (e) => {
 });
 
 document.addEventListener("click", (e) => {
-  if (e.target.getAttribute("class") !== "add__img") {
+  if (e.target.getAttribute("class") !== "add__img" && e.target.getAttribute("class") !== "url__img") {
     const modal = members.querySelector(".modalMember__newMember");
     closeModal(modal)
   }
@@ -45,14 +45,10 @@ function ComponentModal() {
 
 function ComponentMember(url) {
   return `
-      <li class="groupList__item">
-        <a href="/" class="item__listLink">
-          <picture class="listLink__pictures">
-            <img
-            class="pictures__profile"
-            src="${url}"
-            alt="profile picture"
-            />
+      <li class="container__list">
+        <a href="/" class="list__profile">
+          <picture class="profile__pictures">
+            <img class="pictures__user" src="${url}" alt="profile picture" />
           </picture>
         </a>
       </li>
@@ -72,7 +68,8 @@ function submitFormOfMember() {
       return;
     }
     data.forEach((post) => {
-      const member = document.querySelector(".members__groupList");
+      console.log(post.url);
+      const member = document.querySelector(".members__container");
       member.innerHTML += ComponentMember(post.url);
     });
     data.pop();
