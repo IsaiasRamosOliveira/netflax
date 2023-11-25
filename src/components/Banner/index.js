@@ -7,11 +7,22 @@ const data = [];
 
 banner.addEventListener("click", (e) => {
   const btn = e.target.getAttribute("class");
-  if (btn == "banner__add") {
+  const modal = banner.querySelector(".modalBanner__newBanner");
+  if (btn == "button__text") {
     openModal(banner, ComponentModal, submitFormOfBanner);
   }
   if (btn == "newBanner__close") {
-    const modal = banner.querySelector(".modalBanner__newBanner");
+    closeModal(modal);
+    handleChangeBanner();
+  }
+  if (btn == "form__submitBanner") {
+    closeModal(modal);
+  }
+});
+
+document.addEventListener("click", (e) => {
+  const modal = banner.querySelector(".modalBanner__newBanner");
+  if (modal && modal.contains && !modal.contains(e.target) && e.target.getAttribute("class") !== "button__text") {
     closeModal(modal);
     handleChangeBanner();
   }
@@ -38,9 +49,9 @@ function ComponentModal() {
 
 function ComponentBanner(urlBanner, name) {
   return `
-    <li class="list__img">
+    <li class="list__imgs">
       <img
-      class="banner__mimg banner__mimg--border"
+      class="imgs__img imgs__img--border"
       src="${urlBanner}"
       alt="${name}"
     />
@@ -49,18 +60,20 @@ function ComponentBanner(urlBanner, name) {
 
 function submitFormOfBanner() {
   const modal = document.querySelector(".modalBanner");
-  const modalBanner = banner.querySelector(".modalBanner__newBanner");
-
   const formBanner = document.querySelector(".form__submitBanner");
   formBanner.addEventListener("click", (e) => {
     e.preventDefault();
     const urlBanner = modal.querySelector("#urlBanner").value;
     const name = modal.querySelector("#name").value;
     data.push({ urlBanner, name });
+    if (urlBanner === "" || name === "") {
+      alert("add a valid value");
+      data.pop();
+      return;
+    }
     data.forEach((post) => {
-      const banner = document.querySelector(".banner__list");
+      const banner = document.querySelector(".footer__list");
       banner.innerHTML += ComponentBanner(post.urlBanner, post.name);
-      closeModal(modalBanner);
       handleChangeBanner();
     });
     data.pop();
